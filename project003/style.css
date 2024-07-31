@@ -1,0 +1,2745 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Luckiest+Guy&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 
+영문1 - font-family: "Luckiest Guy", cursive;
+영문2 - font-family: "Black Han Sans", sans-serif;
+한글 - font-family: "Noto Sans KR", sans-serif;
+
+*/
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+
+/* nav 설정------------------------------ */
+nav {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 99;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+ }
+nav ul {}
+nav li {
+    font-size: 25px;
+    font-family: "Luckiest Guy", cursive;
+    padding: 25px 10px;
+    color: transparent;
+    -webkit-text-stroke: 2px #1D2635;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: right;
+    transition: all 0.3s;
+}
+
+nav li.on {
+    color: #C2F361;
+}
+
+nav li:hover {
+    color: #C2F361;
+}
+
+
+
+section {
+    display: none;
+}
+section.show {
+    display: block;
+}
+
+
+section article {
+    width: 100%;
+    height: 100vh;
+}
+
+/* 배경 동영상 설정--------------- */
+.bg_vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.bg_vid video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* 인트로 설정 */
+.intro {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+/* 인트로 배경 설정 */
+.intro .bg_vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.intro .bg_vid video {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.intro .icon {}
+.intro .icon ul {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro .icon li {
+    margin: 10px;
+    width: 140px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+
+/* 클릭팝업 설정 */
+.intro .click {
+    width: 550px;
+    height: 360px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -275px;
+    z-index: 15;
+}
+.intro .click .close {
+    width: 550px;
+    height: 35px;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #61A3FF;
+}
+.intro .click .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color: #F6F9FF;
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.intro .click .close span {
+    border-left: 2px solid #1D2635;
+    width: 35px;
+    height: 35px;
+    background-color: #FF6161;
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+.intro .click .txt {
+    width: 100%;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+.intro .click .txt h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    color: #1D2635;
+    padding-top: 30px;
+}
+
+.intro .click .txt .btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 550px;
+}
+.intro .click .txt .btn span {
+   font-family: "Luckiest Guy", cursive;
+   border: 2px solid #1D2635;
+   padding: 20px 60px;
+   font-size: 30px;
+   color: #1D2635;
+   cursor: pointer;
+   transition: all 0.3s;
+    
+}
+.intro .click .txt .btn span:hover {
+    background-color: #061F62;
+    color: #F6F9FF;
+}
+
+
+/* 인트로 팝업 이미지 설정 */
+.intro .curious {
+    width: 350px;
+    height: 270px;
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    margin-left: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+.intro .curious img {
+    transform: scale(0.8);
+}
+
+.intro .hey {
+    width: 350px;
+    height: 270px;
+    position: absolute;
+    top: 13%;
+    right: 19%;
+    margin-top: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 16;
+}
+.intro .hey img {
+    transform: scale(0.8);
+}
+
+.intro .folder {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    margin-top: -20px;
+    margin-right: -10px;
+    width: 130px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.intro .folder img {}
+
+
+
+
+
+
+
+
+
+/* 메인 설정-------------------- */
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.main .title_popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -136.5px;
+    margin-left: -236px;
+    width: 475px;
+    height: 275px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .title_popup img {
+    transform: scale(0.57);
+}
+
+
+.main .imgBox {}
+.main .imgBox li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.animate {
+  animation: fadeIn ease 1s forwards;
+}
+
+
+.main .imgBox li:nth-child(1) {
+    top: 80px;
+    left: 10%;
+    animation-delay: 0;
+    width: 210px;
+    height: 190px;
+}
+.main .imgBox li:nth-child(2) {
+    top: 120px;
+    left: 32%;
+    width: 225px;
+    height: 210px;
+    animation-delay: 2s;
+
+}
+.main .imgBox li:nth-child(3) {
+    top: 100px;
+    left: 55%;
+    animation-delay: 0.5s;
+    width: 270px;
+    height: 165px;
+}
+.main .imgBox li:nth-child(4) {
+    top: 120px;
+    left: 80%;
+    animation-delay: 1.2s;
+    width: 190px;
+    height: 175px;
+}
+.main .imgBox li:nth-child(5) {
+    left: 75%;
+    top: 55%;
+    animation-delay: 2s;
+    width: 280pxpx;
+    height: 275px;
+}
+.main .imgBox li:nth-child(6) {
+    left: 68%;
+    top: 33%;
+    animation-delay: 1.2s;
+    width: 220px;
+    height: 280px;
+}
+.main .imgBox li:nth-child(7) {
+    top: 35%;
+    left: 16%;
+    animation-delay: 0.5s;
+    width: 190px;
+    height: 225px;
+}
+.main .imgBox li:nth-child(8) {
+    top: 65%;
+    left: 150px;
+    animation-delay: 1.2s;
+    width: 165px;
+    height: 180px;
+}
+.main .imgBox li:nth-child(9) {
+    top: 70%;
+    left: 25%;
+    animation-delay: 0;
+    width: 405px;
+    height: 235px;
+}
+.main .imgBox li:nth-child(10) {
+    top: 76%;
+    left: 54%;
+    animation-delay: 2s;
+    width: 325px;
+    height: 135px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* about 설정-------------------- */
+.about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+/* 비디오 설정 */
+.about .iphone {
+    width: 345px;
+    height: 630px;
+    overflow: hidden;
+}
+
+
+.about .iphone .frame {
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    margin-left: -125px;
+    z-index: 2;
+    width: 350px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .iphone .frame img {
+    transform: scale(0.218);
+}
+
+.about .iphone .vid {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 23%;
+    overflow: hidden;
+    margin-left: -120px;
+    border-radius: 55px;
+    width: 338px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .iphone .vid video {
+    transform: scale(0.32);
+}
+
+
+/* 타이틀 설정 */
+.about .title {
+    position: absolute;
+    top: 90px;
+    left: 10%;
+    animation: title linear 1.5s infinite;
+
+}
+
+.about .title .title_img {
+    width: 450px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.about .title .title_img img {
+    transform: scale(0.6);
+}
+.about .title ul {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 340px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .title li:nth-child(1) {
+    transform: rotate(-10deg);
+    animation: ani1 1s steps(2) infinite;
+}
+.about .title li:nth-child(2) {
+    transform: rotate(10deg);
+    animation: ani2 1s steps(2) infinite;
+}
+.about .title li:nth-child(3) {
+    transform: rotate(-10deg);
+    animation: ani3 1s steps(2) infinite;
+}
+.about .title li:nth-child(4) {
+    transform: rotate(10deg);
+    animation: ani4 1s steps(2) infinite;
+}
+
+@keyframes title {
+    0% {
+        transform:  translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+
+/* 애니메이션 설정 */
+@keyframes ani1 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes ani3 {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes ani4 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+
+
+/* 호버 안내문구 설정 */
+.about .hover {
+    width: 300px;
+    height: 50px;
+    background-color: #F6F9FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #A0A7B4;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+
+}
+
+.about .hover p {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #1D2635;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about .hover span {
+    width: 10%;
+    height: 30px;
+    background-color: #2E9DFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+.about .hover span i {
+    color: #F6F9FF;
+    font-size: 20px;
+}
+
+/* 팝업 이미지 설정 */
+.about .popup1 {}
+.about .popup1 div {
+    position: absolute;
+}
+
+.about .popup1 .reminder {
+    top: 80px;
+    right: 25%;
+    width: 200px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+}
+.about .popup1 .reminder img {
+    transform: scale(0.54);
+}
+
+.about .popup1 .heart {
+    top: 60px;
+    right: 19%;
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+}
+.about .popup1 .heart img {
+    transform: scale(0.4);
+}
+
+.about .popup1 .attention {
+    top: 190px;
+    right: 8%;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+}
+.about .popup1 .attention img {
+    transform: scale(0.6);
+}
+
+.slideIn1 {
+    animation: slideIn 0.8s forwards;
+}
+.slideIn2 {
+    animation: slideIn2 0.8s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-30px); opacity: 0;
+    }
+    100% {
+        transform: translateX(0); opacity: 1;
+    }
+}
+@keyframes slideIn2 {
+    0% {
+        transform: translateX(30px); opacity: 0;
+    }
+    100% {
+        transform: translateX(0); opacity: 1;
+    }
+}
+
+.about .popup2 {
+    position: absolute;
+    bottom: 60px;
+    left: 160px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 170px;
+   opacity: 0;
+}
+.about .popup2 img {
+    transform: scale(0.6);
+}
+
+
+
+
+
+
+/* 말풍선 설정 */
+.left_txt {
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    margin-left: 30px;
+}
+.left_txt ul {}
+.left_txt li {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left_txt li:nth-child(1) {
+    animation-delay: 1s;
+    width: 345px;
+    height: 90px;    
+}
+
+.left_txt li:nth-child(2) {
+    animation-delay: 2.5s;
+    width: 345px;
+    height: 180px;
+}
+
+.animate2 {
+    animation: txt 0.3s linear forwards;
+}
+
+.left_txt li.sns {
+    position: relative;
+    margin-top: 50px;
+}
+.left_txt li.sns img {}
+.left_txt li.sns .sns_txt {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    padding: 5px 0;
+}
+.left_txt li.sns .sns_txt p {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+.left_txt li.sns .sns_txt a {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.left_txt li.sns .sns_txt a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.right_txt {
+    position: absolute;
+    right: 16%;
+    top: 40%;
+    margin-top: 10px;
+    
+}
+.right_txt ul {}
+.right_txt li {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right_txt li:nth-child(1) {
+    animation-delay: 0.5s;
+    width: 360px;
+    height: 160px;
+}
+.right_txt li:nth-child(2) {
+    margin-top: 50px;
+    animation-delay: 1.5s;
+    width: 360px;
+    height: 105px;
+}
+.right_txt li:nth-child(3) {
+    margin-top: 20px;
+    animation-delay: 2s;
+    width: 360px;
+    height: 90px;
+}
+.right_txt img {}
+
+
+@keyframes txt {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+/* playlist 설정----------------- */
+.playlist {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+
+/* 왼쪽 이미지 설정 */
+.playlist .left_img {
+    width: 50%;
+}
+.playlist .left_img ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.playlist .left_img li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.playlist .left_img li.on {
+    opacity: 1;
+}
+
+
+.playlist .left_img li:nth-child(1) {
+    background-image: url(img/playlist/bg_insta.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.playlist .left_img li:nth-child(1) .chat_img {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    animation: title linear 1s infinite;
+    width: 375px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.playlist .left_img li:nth-child(1) .chat_img img {}
+
+
+
+
+
+
+
+/* child------- */
+.playlist .left_img .child {
+    background-image: url(img/playlist/child_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 말풍선 설정 */
+.playlist .left_img .child .chat_box {}
+.playlist .left_img .child .chat_box .bubble {
+    position: absolute;
+    left: 15%;
+    margin-left: 40px;
+    top: 10%;
+    margin-top: -10px;
+    width: 240px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.8s;
+    opacity: 0;
+    z-index: 10;
+
+}
+.playlist .left_img .child .chat_box .bubble .img {}
+
+
+.playlist .left_img .child .chat_box .bubble .heart {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: #007AFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.playlist .left_img .child .chat_box .bubble .heart i {
+    font-size: 30px;
+    color: #F76190;
+    line-height: 1.7;
+    animation: pulse 0.7s infinite;
+    transform: scale(0.8);
+}
+
+
+/* 하트 키프레임 */
+@keyframes pulse {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+  
+
+
+
+
+.playlist .left_img .child .chat_box .bubble .youtube {
+    position: absolute;
+    
+    top: 18px;
+    right: 30px;
+}
+.playlist .left_img .child .chat_box .bubble .youtube a i {
+    font-size: 30px;
+    color: #FF0000;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.playlist .left_img .child .chat_box .bubble .youtube a {
+    color: #1D2635;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+}
+
+
+.playlist .left_img .child .chat_box .chat {
+    position: absolute;
+    right: 200px;
+    top: 20%;
+    width: 345px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.5s;
+    opacity: 0;
+
+}
+.playlist .left_img .child .chat_box .chat img {}
+
+
+
+
+
+
+/* 플레이어 설정 */
+.playlist .left_img .child .container {
+    width: 535px;
+    height: 500px;
+    background-color: rgba(248, 254, 255, 0.8);
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+.playlist .left_img .child .container .above {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.playlist .left_img .child .container .above .cover {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .left_img .child .container .above .cover img {}
+.playlist .left_img .child .container .above .music {
+    width: 50%;
+    height: 300px;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.playlist .left_img .child .container .above .music h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #1D2635;
+}
+.playlist .left_img .child .container .above .music span {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #787D85;
+    font-size: 15px;
+}
+.playlist .left_img .child .container .above .music p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #42464B;
+}
+.playlist .left_img .child .container .above .music .player {
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 10;
+
+}
+.playlist .left_img .child .container .above .music .player i {
+    font-size: 30px;
+    color: #1D2635;
+    padding: 10px 20px;
+}
+
+.playlist .left_img .child .container .under {
+    padding: 0px 40px;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.playlist .left_img .child .container .under p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #1D2635;
+}
+.playlist .left_img .child .container .under p:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 골든아워-------- */
+.playlist .left_img .gh {
+    background-image: url(img/playlist/gh_bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 말풍선 설정 */
+.playlist .left_img .gh .chat_box {}
+.playlist .left_img .gh .chat_box .bubble {
+    position: absolute;
+    left: 15%;
+    margin-left: 40px;
+    top: 10%;
+    margin-top: -10px;
+    width: 240px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.8s;
+    opacity: 0;
+    z-index: 10;
+}
+.playlist .left_img .gh .chat_box .bubble .img {}
+
+
+.playlist .left_img .gh .chat_box .bubble .heart {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: #007AFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.playlist .left_img .gh .chat_box .bubble .heart i {
+    font-size: 30px;
+    color: #F76190;
+    line-height: 1.7;
+    animation: pulse 0.7s infinite;
+    transform: scale(0.8);
+}
+
+
+
+.playlist .left_img .gh .chat_box .bubble .youtube {
+    position: absolute;
+    
+    top: 18px;
+    right: 30px;
+}
+.playlist .left_img .gh .chat_box .bubble .youtube a i {
+    font-size: 30px;
+    color: #FF0000;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.playlist .left_img .gh .chat_box .bubble .youtube a {
+    color: #1D2635;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+}
+
+
+.playlist .left_img .gh .chat_box .chat {
+    position: absolute;
+    right: 200px;
+    top: 19%;
+    width: 345px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.5s;
+    opacity: 0;
+
+}
+.playlist .left_img .gh .chat_box .chat img {}
+
+
+
+
+/* 플레이어 설정 */
+.playlist .left_img .gh .container {
+    width: 535px;
+    height: 500px;
+    background-color: rgba(248, 254, 255, 0.8);
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+.playlist .left_img .gh .container .above {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.playlist .left_img .gh .container .above .cover {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .left_img .gh .container .above .cover img {}
+.playlist .left_img .gh .container .above .music {
+    width: 50%;
+    height: 300px;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.playlist .left_img .gh .container .above .music h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #1D2635;
+}
+.playlist .left_img .gh .container .above .music span {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #787D85;
+    font-size: 15px;
+}
+.playlist .left_img .gh .container .above .music p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #42464B;
+}
+.playlist .left_img .gh .container .above .music .player {
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+.playlist .left_img .gh .container .above .music .player i {
+    font-size: 30px;
+    color: #1D2635;
+    padding: 10px 20px;
+}
+
+.playlist .left_img .gh .container .under {
+
+    padding: 15px 40px;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.playlist .left_img .gh .container .under p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #1D2635;
+}
+.playlist .left_img .gh .container .under p:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+/* 200------------- */
+.playlist .left_img .two {
+    background-image: url(img/playlist/200_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 말풍선 설정 */
+.playlist .left_img .two .chat_box {}
+.playlist .left_img .two .chat_box .bubble {
+    position: absolute;
+    left: 15%;
+    margin-left: 40px;
+    top: 10%;
+    margin-top: -10px;
+    width: 240px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.8s;
+    opacity: 0;
+    z-index: 10;
+}
+.playlist .left_img .two .chat_box .bubble .img {}
+
+
+.playlist .left_img .two .chat_box .bubble .heart {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background-color: #007AFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.playlist .left_img .two .chat_box .bubble .heart i {
+    font-size: 30px;
+    color: #F76190;
+    line-height: 1.7;
+    animation: pulse 0.7s infinite;
+    transform: scale(0.8);
+}
+
+
+.playlist .left_img .two .chat_box .bubble .youtube {
+    position: absolute;
+    
+    top: 18px;
+    right: 30px;
+}
+.playlist .left_img .two .chat_box .bubble .youtube a i {
+    font-size: 30px;
+    color: #FF0000;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.playlist .left_img .two .chat_box .bubble .youtube a {
+    color: #1D2635;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+.playlist .left_img .two .chat_box .chat {
+    position: absolute;
+    right: 200px;
+    top: 20%;
+    width: 345px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+.playlist .left_img .two .chat_box .chat img {}
+
+
+/* 호버효과 */
+.playlist .left_img .child .chat_box .bubble:hover .heart i {
+    animation-play-state: paused;
+}
+.playlist .left_img .gh .chat_box .bubble:hover .heart i {
+    animation-play-state: paused;
+}
+.playlist .left_img .two .chat_box .bubble:hover .heart i {
+    animation-play-state: paused;
+}
+.playlist .left_img .child .chat_box .bubble:hover .youtube a {
+    text-decoration: underline;
+}
+.playlist .left_img .gh .chat_box .bubble:hover .youtube a {
+    text-decoration: underline;
+}
+.playlist .left_img .two .chat_box .bubble:hover .youtube a {
+    text-decoration: underline;
+}
+
+
+
+/* 플레이어 설정 */
+.playlist .left_img .two .container {
+    width: 535px;
+    height: 500px;
+    background-color: rgba(248, 254, 255, 0.8);
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+.playlist .left_img .two .container .above {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.playlist .left_img .two .container .above .cover {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .left_img .two .container .above .cover img {}
+.playlist .left_img .two .container .above .music {
+    width: 50%;
+    height: 300px;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.playlist .left_img .two .container .above .music h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #1D2635;
+}
+.playlist .left_img .two .container .above .music span {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #787D85;
+    font-size: 15px;
+}
+.playlist .left_img .two .container .above .music p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #42464B;
+}
+.playlist .left_img .two .container .above .music .player {
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+.playlist .left_img .two .container .above .music .player i {
+    font-size: 30px;
+    color: #1D2635;
+    padding: 10px 20px;
+}
+
+.playlist .left_img .two .container .under {
+    padding: 20px 40px;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.playlist .left_img .two .container .under p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #1D2635;
+}
+.playlist .left_img .two .container .under p:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* 날짜 설정 */
+.playlist .date {
+    width: 50%;
+    position: relative;
+}
+.playlist .date ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .date li {
+    font-family: "Black Han Sans", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px #1D2635;
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.playlist .date .emoji01 {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin-left: -20px;
+    margin-top: -20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .date .emoji01 img {
+    transform: scale(0.4);
+}
+
+.playlist .date .emoji02 {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    margin-top: -20px;
+    margin-right: -30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .date .emoji02 img {
+    transform: scale(0.4);
+}
+
+.playlist .date .emoji03 {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: 30%;
+    left: 25%;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist .date .emoji03 img {
+    transform: scale(0.4);
+}
+
+@keyframes ani6 {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.date div.on {
+    animation: ani1 0.8s steps(2) infinite;
+}
+
+
+
+
+
+
+/* 텍스트 마우스 호버 */
+
+.playlist .date li:nth-child(1):hover {
+    color: #B23220;
+}
+.playlist .date li:nth-child(2):hover {
+    color: #DF8120;
+}
+.playlist .date li:nth-child(3):hover {
+    color: #FEF200;
+}
+
+
+.playlist .date li:nth-child(1).on {
+    color: #B23220;
+}
+.playlist .date li:nth-child(2).on {
+    color: #DF8120;
+}
+.playlist .date li:nth-child(3).on {
+    color: #FEF200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 그룹 설정-------------------- */
+.group {
+    width: 100%;
+    height: 100vh;
+}
+
+/* 그룹 타이틀 설정 */
+.group .title {
+    position: relative;
+    width: 100%;
+    height: 35%;
+    padding-top: 90px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group .title .image {
+    width: 465px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.group .title .image img {
+    transform: scale(0.54);
+}
+.group .title .click {
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #1D2635;
+    background: linear-gradient(90.86deg, #E8FFE8 16.08%, #6FFF74 96.54%);
+    transform: scale(1) rotate(12.55deg);
+    padding: 5px;
+    box-sizing: border-box;
+    left: 57%;
+    top: 160px;
+    animation: ani5 1.5s infinite;
+}
+
+@keyframes ani5 {
+    0% {
+        transform: scale(1) rotate(12.55deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(12.55deg);
+    }
+    100% {
+        transform: scale(1) rotate(12.55deg);
+    }
+}
+
+
+.group .title .click p {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 20px;
+    -webkit-text-stroke: 2px #1D2635;
+    color: #DAF3FF;
+    letter-spacing: 2px;
+}
+
+
+
+/* 그룹 폴더 설정 */
+.group ul li img {
+    transition: all 0.3s;
+}
+.group .above {
+    position: relative;
+    width: 70%;
+    height: 30%;
+    margin: 0 auto;
+}
+.group .above ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.group .above li {
+    cursor: pointer;
+    padding: 20px;
+    opacity: 0;
+}
+
+.group .above li:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.group .above li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.group .above li:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.group .under li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+.group .under li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+
+.group .above li img {}
+
+
+.group .under {
+    width: 65%;
+    margin: 0 auto;
+    height: 30%;
+    position: relative;
+    margin-top: -40px;
+}
+.group .under ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.group .under li {
+    cursor: pointer;
+    padding: 20px;
+    opacity: 0;
+}
+.group .under li img {}
+
+.group ul li:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* 갤러리 설정-------------------- */
+.photo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+
+/* 큰 이미지 설정 */
+.photo .bigImg {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.photo .bigImg ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.photo .bigImg li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all 1s;
+}
+.photo .bigImg li.on {
+    left: 0;
+}
+
+.photo .bigImg li.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo .bigImg li img {
+    width: 100%;
+    height: auto;
+}
+
+.photo .bigImg li:nth-child(9) img {
+    transform: translate(0, -200px);
+}
+.photo .bigImg li:nth-child(10) img {
+    transform: translate(0, -180px);
+}
+
+
+
+
+/* 이미지 썸네일 설정 */
+.photo .thumb {
+    width: 40%;
+    height: 100vh;
+    margin-left: 50%;
+    padding-top: 100px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.photo .thumb ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+
+}
+.photo .thumb li {
+    cursor: pointer;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.photo .thumb li:last-child {
+    margin-bottom: 80px;
+}
+
+.photo .thumb ul li.on {
+    filter: grayscale(0);
+}
+
+
+.photo .thumb li div {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+
+.photo .thumb ul li div img {
+    transform: scale(0.2);
+}
+
+
+
+
+/* 마우스 호버 */
+.photo .thumb ul li:hover {
+    filter: grayscale(0);
+}
+
+
+/* 썸네일 이미지 위치 설정 */
+.photo .thumb ul li:nth-child(1) div img {
+    transform: scale(0.2) translate(-20px, 300px);
+}
+.photo .thumb ul li:nth-child(2) div img {
+    transform: scale(0.2) translate(80px, -50px);
+}
+
+.photo .thumb ul li:nth-child(3) div img {
+    transform: scale(0.1) translate(0, 600px);
+}
+
+.photo .thumb ul li:nth-child(4) div img {
+    transform: scale(0.3) translate(0, 300px);
+}
+.photo .thumb ul li:nth-child(5) div img {
+    transform: scale(0.2) translate(50px, 300px);
+}
+
+.photo .thumb ul li:nth-child(6) div img {
+    transform: scale(0.15) translate(0, 400px)
+}
+
+.photo .thumb ul li:nth-child(7) div img {
+    transform: scale(0.1) translate(100px, 300px);
+}
+.photo .thumb ul li:nth-child(8) div img {
+    transform: scale(0.3) translate(-50px, 250px);
+}
+
+.photo .thumb ul li:nth-child(10) div img {
+    transform: scale(0.3) translate(0, 100px);
+}
+
+.photo .thumb ul li:nth-child(12) div img {
+    transform: scale(0.2) translate(0, 200px);
+}
+
+.photo .thumb ul li:nth-child(13) div img {
+    transform: scale(0.3) translate(0, 100px);
+}
+
+.photo .thumb ul li:nth-child(14) div img {
+    transform: scale(0.2) translate(0, 700px);
+}
+
+
+
+
+
+
+
+/* 팝업설정 */
+/* nct 단체 */
+.popup1_pic {
+    position: absolute;
+    top: calc(100vh * 3.1);
+    left: 50%;
+    width: 510px;
+    height: 690px;
+    border: solid 2px #1D2635;
+    overflow: hidden;
+    display: none;
+}
+.popup1_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup1_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup1_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup1_pic .img img {
+    transform: scale(0.4);
+}
+.popup1_pic .img {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: red;
+}
+
+.popup1_text {
+    position: absolute;
+    top: calc(100vh * 3.4);
+    left: 350px;
+    width: 540px;
+    height: 330px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    display: none;
+}
+
+
+.popup1_text .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup1_text .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup1_text .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup1_text .txtBox {
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.popup1_text .txtBox b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D2635;
+}
+.popup1_text .txtBox em {
+    font-style: normal;
+    font-size: 16px;
+    color: #1D2635;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+.popup1_text .txtBox span {
+    margin: 0 auto;
+    border-top: 1px solid #1D2635;
+    border-left: 1px solid #1D2635;
+    border-right: 2px solid #1D2635;
+    border-bottom: 2px solid #1D2635;
+    padding: 5px;
+}
+
+.popup1_text .txtBox span:hover a {
+    border: 2px dashed #1D2635;
+}
+
+.popup1_text .txtBox span a {
+    display: block;
+    text-align: center;
+    width: 365px;
+    height: 65px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #787D85;
+    line-height: 1.9;
+}
+.popup1_text .txtBox span a i {
+    color: #FF0000;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.popup1_text .txtBox strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* nct u*/
+.popup2_pic {
+    position: absolute;
+    top: calc(100vh * 3.1);
+    left: 50%;
+    width: 600px;
+    height: 430px;
+    border: solid 2px #1D2635;
+    display: none;
+}
+.popup2_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup2_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup2_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup2_pic .img img {
+    transform: scale(0.15);
+}
+.popup2_pic .img {
+    width: 100%;
+    height: 393px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.popup2_1_pic {
+    position: absolute;
+    top: calc(100vh * 3.5);
+    left: 60%;
+    width: 550px;
+    height: 400px;
+    border: solid 2px #1D2635;
+    display: none;
+    overflow: hidden;
+}
+.popup2_1_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup2_1_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup2_1_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup2_1_pic .img img {
+    transform: scale(0.25) translate(0, -50px);
+}
+.popup2_1_pic .img {
+    width: 100%;
+    height: 393px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.popup2_text {
+    position: absolute;
+    top: calc(100vh * 3.4);
+    left: 350px;
+    width: 540px;
+    height: 455px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    display: none;
+}
+
+
+.popup2_text .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup2_text .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup2_text .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup2_text .txtBox {
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.popup2_text .txtBox b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D2635;
+}
+.popup2_text .txtBox em {
+    font-style: normal;
+    font-size: 16px;
+    color: #1D2635;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.popup2_text .txtBox span {
+    margin: 0 auto;
+    border-top: 1px solid #1D2635;
+    border-left: 1px solid #1D2635;
+    border-right: 2px solid #1D2635;
+    border-bottom: 2px solid #1D2635;
+    padding: 5px;
+}
+
+.popup2_text .txtBox span.boss {
+    margin-top: 10px;
+}
+.popup2_text .txtBox span.jeans {
+    margin-top: 10px;
+}
+
+
+
+.popup2_text .txtBox span:hover a {
+    border: 2px dashed #1D2635;
+    width: 365px;
+}
+
+.popup2_text .txtBox span a {
+    display: block;
+    text-align: center;
+    width: 365px;
+    height: 65px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #787D85;
+    line-height: 1.9;
+}
+.popup2_text .txtBox span a i {
+    color: #FF0000;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.popup2_text .txtBox strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 슈퍼엠 */
+.popup3_pic {
+    position: absolute;
+    top: calc(100vh * 3.3);
+    left: 50%;
+    width: 600px;
+    height: 430px;
+    border: solid 2px #1D2635;
+    display: none;
+}
+.popup3_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup3_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup3_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup3_pic .img img {
+    transform: scale(0.15);
+}
+.popup3_pic .img {
+    width: 100%;
+    height: 393px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup3_text {
+    position: absolute;
+    top: calc(100vh * 3.2);
+    left: 350px;
+    width: 540px;
+    height: 330px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    display: none;
+}
+
+
+.popup3_text .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup3_text .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup3_text .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup3_text .txtBox {
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.popup3_text .txtBox b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D2635;
+}
+.popup3_text .txtBox em {
+    font-style: normal;
+    font-size: 16px;
+    color: #1D2635;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+.popup3_text .txtBox span {
+    margin: 0 auto;
+    border-top: 1px solid #1D2635;
+    border-left: 1px solid #1D2635;
+    border-right: 2px solid #1D2635;
+    border-bottom: 2px solid #1D2635;
+    padding: 5px;
+}
+
+.popup3_text .txtBox span:hover a {
+    border: 2px dashed #1D2635;
+}
+
+.popup3_text .txtBox span a {
+    display: block;
+    text-align: center;
+    width: 365px;
+    height: 65px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #787D85;
+    line-height: 1.9;
+}
+.popup3_text .txtBox span a i {
+    color: #FF0000;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.popup3_text .txtBox strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 127 */
+.popup4_pic {
+    position: absolute;
+    top: calc(100vh * 3.4);
+    left: 50%;
+    width: 600px;
+    height: 430px;
+    border: solid 2px #1D2635;
+    display: none;
+}
+.popup4_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup4_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup4_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup4_pic .img img {
+    transform: scale(0.3);
+}
+.popup4_pic .img {
+    width: 100%;
+    height: 393px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.popup4_text {
+    position: absolute;
+    top: calc(100vh * 3.2);
+    left: 350px;
+    width: 540px;
+    height: 350px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    display: none;
+}
+
+
+.popup4_text .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup4_text .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup4_text .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup4_text .txtBox {
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.popup4_text .txtBox b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D2635;
+}
+.popup4_text .txtBox em {
+    font-style: normal;
+    font-size: 16px;
+    color: #1D2635;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+.popup4_text .txtBox span {
+    margin: 0 auto;
+    border-top: 1px solid #1D2635;
+    border-left: 1px solid #1D2635;
+    border-right: 2px solid #1D2635;
+    border-bottom: 2px solid #1D2635;
+    padding: 5px;
+}
+
+.popup4_text .txtBox span:hover a {
+    border: 2px dashed #1D2635;
+}
+
+.popup4_text .txtBox span a {
+    display: block;
+    text-align: center;
+    width: 365px;
+    height: 65px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #787D85;
+    line-height: 1.9;
+}
+.popup4_text .txtBox span a i {
+    color: #FF0000;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.popup4_text .txtBox strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* 드림 */
+.popup5_pic {
+    position: absolute;
+    top: calc(100vh * 3.1);
+    left: 50%;
+    width: 600px;
+    height: 500px;
+    border: solid 2px #1D2635;
+    display: none;
+}
+.popup5_pic .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup5_pic .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup5_pic .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup5_pic .img img {
+    transform: scale(0.24);
+}
+.popup5_pic .img {
+    width: 100%;
+    height: 463px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.popup5_text {
+    position: absolute;
+    top: calc(100vh * 3.4);
+    left: 350px;
+    width: 540px;
+    height: 350px;
+    background-color: #F6F9FF;
+    border: 2px solid #1D2635;
+    display: none;
+}
+
+
+.popup5_text .close {
+    background-color: #61A3FF;
+    border-bottom: 2px solid #1D2635;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+.popup5_text .close p {
+    font-family: "Black Han Sans", sans-serif;
+    color:  #F6F9FF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+.popup5_text .close span {
+    background-color: #FF6161;
+    color: #1D2635;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px;
+    line-height: 1.3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 35px;
+    border-left: 2px solid #1D2635;
+}
+.popup5_text .txtBox {
+    padding: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.popup5_text .txtBox b {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1D2635;
+}
+.popup5_text .txtBox em {
+    font-style: normal;
+    font-size: 16px;
+    color: #1D2635;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+.popup5_text .txtBox span {
+    margin: 0 auto;
+    border-top: 1px solid #1D2635;
+    border-left: 1px solid #1D2635;
+    border-right: 2px solid #1D2635;
+    border-bottom: 2px solid #1D2635;
+    padding: 5px;
+}
+
+.popup5_text .txtBox span:hover a {
+    border: 2px dashed #1D2635;
+}
+
+.popup5_text .txtBox span a {
+    display: block;
+    text-align: center;
+    width: 365px;
+    height: 65px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #787D85;
+    line-height: 1.9;
+}
+.popup5_text .txtBox span a i {
+    color: #FF0000;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.popup5_text .txtBox strong {
+    font-size: 20px;
+    font-weight: bold;
+}
