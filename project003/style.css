@@ -154,6 +154,29 @@ section article {
     margin-top: -180px;
     margin-left: -275px;
     z-index: 15;
+    animation: introani 5s infinite linear;
+}
+
+.intro .click:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes introani {
+    0% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90%  {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80%{
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+
 }
 .intro .click .close {
     width: 550px;

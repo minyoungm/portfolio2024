@@ -1,0 +1,2701 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+ 영문-font-family: "Kanit", sans-serif;
+ 한글-font-family: "Gothic A1", sans-serif;
+*/
+
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    color: #38332D;
+}
+
+
+
+
+
+/* 헤더설정 */
+
+header {}
+
+.header_inner {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+    top: 20px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+
+
+/* 로고 설정 */
+header h1 {
+    width: 155px;
+    height: 50px;
+}
+header h1 a {
+    display: block;
+}
+header h1 a img {}
+
+
+/* 유틸리티 설정 */
+header .util {}
+
+header .util ul {
+    display: flex;
+}
+header .util li {}
+header .util a {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+}
+
+
+
+/* 첫번째 섹션 설정 ------------------- */
+.landing {
+    width: 100%;
+    height: 100vh;
+}
+.landing ul.bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.landing ul.bg>li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+/* 랜딩001 설정 */
+.landing .background01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.landing .background01 .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(img/landing001.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.landing .background01 .txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    background-color: #fff;
+    color: #38332D;
+}
+
+.landing .background01 .txt h1 {
+    font-style: normal;
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    font-family: "Kanit", sans-serif;
+    
+}
+.landing .background01 .txt em {
+    font-style: normal;
+    letter-spacing: 24px;
+}
+.landing .background01 .txt span {
+    color: #B3E24F;
+    letter-spacing: 28px;
+}
+.landing .background01 .txt strong {
+    font-style: normal;
+    color: #B3E24F;
+    font-weight: 500;
+
+}
+
+
+.landing .background01 .txt .ko {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 30px;
+}
+.landing .background01 .txt .ko p {
+    width: 28%;
+    height: 100%;
+}
+
+.landing .background01 .txt .ko .dashed {
+    height: 1px;
+    width: 65%;
+    border-top: 2px dashed #B3E24F;
+
+}
+
+
+.landing .background01 .bottle {
+    position: absolute;
+    width: 450px;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -340px;
+}
+.landing .background01 .bottle img {
+    transform: scale(0.34);
+}
+
+
+
+
+
+/* 랜딩002 설정 */
+.landing .background02 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.landing .background02 .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(img/landing003.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.landing .background02 .txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    background-color: #fff;
+    color: #38332D;
+}
+
+.landing .background02 .txt h1 {
+    font-style: normal;
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+
+.landing .background02 .txt .ko {
+    width: 375px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 30px;
+
+}
+.landing .background02 .txt .ko p {
+    width: 30%;
+    height: 100%;
+}
+
+.landing .background02 .txt .ko .dashed {
+    height: 1px;
+    width: 60%;
+    border-top: 2px dashed #6BB1E8;
+
+}
+
+.landing .background02 .txt span {
+    color: #6BB1E8;
+    letter-spacing: 43px;
+}
+.landing .background02 .txt strong {
+    font-style: normal;
+    color: #6BB1E8;
+    font-weight: 500;
+    letter-spacing: 35px;
+
+}
+.landing .background02 .txt p {
+   
+}
+
+.landing .background02 .bottle {
+    position: absolute;
+    width: 325px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-left: -162.5px;
+    margin-top: -275px;
+}
+.landing .background02 .bottle img {
+    transform: scale(0.92);
+}
+
+
+
+/* 랜딩003 설정 */
+.landing .background03 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.landing .background03 .img {
+    width: 50%;
+    height: 100%;
+    background-image: url(img/landing002.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+.landing .background03 .txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    background-color: #fff;
+    color: #38332D;
+}
+
+.landing .background03 .txt h1 {
+    font-style: normal;
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+.landing .background03 .txt span {
+    letter-spacing: 56px;
+}
+.landing .background03 .txt strong {
+    font-style: normal;
+    color: #FFBA2F;
+    font-weight: 500;
+    letter-spacing: 39px;
+
+}
+
+.landing .background03 .txt .ko {
+    width: 370px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 30px;
+}
+.landing .background03 .txt .ko p {
+    width: 25%;
+    height: 100%;
+
+}
+
+.landing .background03 .txt .ko .dashed {
+    height: 1px;
+    width: 65%;
+    border-top: 2px dashed #FFBA2F;
+
+}
+
+
+.landing .background03 .bottle {
+    position: absolute;
+    width: 425px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-left: -212.5px;
+    margin-top: -325.5px;
+}
+.landing .background03 .bottle img {
+    transform: scale(0.51);
+}
+
+
+/* 랜딩페이지 숫자 설정 */
+.landing .no {
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    margin-top: -30px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    z-index: 999;
+}
+.landing .no>li {
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #ADA69F;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.landing .no>li:hover {
+    color: #38332D;
+    border-bottom: 2px solid rgba(56, 51, 45, 1);
+}
+
+.landing .no>li.on {
+    color: #38332D;
+    border-bottom: 2px solid rgba(56, 51, 45, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 두번째 섹션 설정--------------------- */
+.product {
+    position: relative;
+    height: 1100px;
+    width: 100%;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+
+/* 프로덕트 타이틀 설정 */
+.product .title {
+    width: 60%;
+    border-top: 3px dashed #CBDDEB;
+    border-bottom: 3px dashed #CBDDEB;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+.product .title h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+/* 프로덕트 이미지 설정 */
+.product .slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.product .slider .pro1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* 데이지 와일드 설정 */
+.product .slider .pro1 .wild {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+
+
+.product .slider .pro1 .wild .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro1 .wild .img .bottle {
+    width: 270px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    margin-left: -135px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro1 .wild .img .bottle img {
+    transform: scale(0.2);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro1 .wild .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 와일드 텍스트 설정 */
+.product .pro1 .wild .txt {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 300px;
+    height: 160px;
+    margin-left: -160px;
+    margin-top: -80px;
+    z-index: 2;
+}
+.product .pro1 .wild .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.product .pro1 .wild .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro1 .wild .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro1 .wild .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro1 .wild:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter: drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro1 .wild:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro1 .wild:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro1 .wild:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/* 데이지 드림 설정 */
+.product .slider .pro1 .subCon {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+.product .slider .pro1 .subCon .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro1 .subCon .img .bottle {
+    width: 200px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -100px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro1 .subCon .img .bottle img {
+    transform: scale(0.5);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro1 .subCon .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+/* 드림 텍스트 설정 */
+.product .pro1 .subCon .txt {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 350px;
+    height: 160px;
+    margin-left: -170px;
+    margin-top: -80px;
+    z-index: 2;
+}
+
+.product .pro1 .subCon .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product .pro1 .subCon .txt p {
+    font-family: "Kanit", sans-serif;
+    color: #38332D;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: 2px dashed #38332D;
+    width: 40%;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+    transition: all 0.3s;
+
+
+}
+.product .pro1 .subCon .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro1 .subCon .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro1 .subCon .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro1 .subCon:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter:drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro1 .subCon:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro1 .subCon:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro1 .subCon:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+.product .slider .pro1 .subCon:hover .txt p {
+    background-color: #38332D;
+    color: #fff;
+}
+
+
+/* 데이지 설정 */
+.product .slider .pro1 .daisyp {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+
+.product .slider .pro1 .daisyp .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro1 .daisyp .img .bottle {
+    width: 220px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -110px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro1 .daisyp .img .bottle img {
+    transform: scale(0.25);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro1 .daisyp .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+/* 데이지 텍스트 설정 */
+.product .pro1 .daisyp .txt {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 280px;
+    height: 160px;
+    margin-left: -170px;
+    margin-top: -80px;
+    z-index: 2;
+}
+.product .pro1 .daisyp .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product .pro1 .daisyp .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro1 .daisyp .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro1 .daisyp .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro1 .daisyp:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter:drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro1 .daisyp:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro1 .daisyp:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro1 .daisyp:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+
+/* pro2 설정 */
+.product .slider .pro2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+
+
+
+/* 데이지 러브 설정 */
+.product .slider .pro2 .love {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+
+.product .slider .pro2 .love .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro2 .love .img .bottle {
+    width: 270px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -135px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro2 .love .img .bottle img {
+    transform: scale(0.33);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro2 .love .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+/* 러브 텍스트 설정 */
+.product .pro2 .love .txt {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 400px;
+    height: 160px;
+    margin-left: -170px;
+    margin-top: -80px;
+    z-index: 2;
+}
+.product .pro2 .love .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product .pro2 .love .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro2 .love .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro2 .love .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro2 .love:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter:drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro2 .love:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro2 .love:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro2 .love:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/* 인텐스 설정 */
+.product .slider .pro2 .intense {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+
+.product .slider .pro2 .intense .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro2 .intense .img .bottle {
+    width: 210px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -105px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro2 .intense .img .bottle img {
+    transform: scale(0.33);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro2 .intense .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+/* 인텐스 텍스트 설정 */
+.product .pro2 .intense .txt {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 410px;
+    height: 230px;
+    margin-left: -170px;
+    margin-top: -80px;
+    z-index: 2;
+}
+.product .pro2 .intense .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product .pro2 .intense .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro2 .intense .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro2 .intense .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro2 .intense:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter:drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro2 .intense:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro2 .intense:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro2 .intense:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+
+/* 프레쉬 설정 */
+.product .slider .pro2 .fresh {
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+
+.product .slider .pro2 .fresh .img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* 보틀 이미지 설정 */
+.product .slider .pro2 .fresh .img .bottle {
+    width: 170px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -85px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.product .slider .pro2 .fresh .img .bottle img {
+    transform: scale(0.23);
+}
+
+
+
+/* 호버 이미지 설정 */
+.product .pro2 .fresh .img .hover {
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px dashed #F9CBAB;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+
+/* 프레쉬 텍스트 설정 */
+.product .pro2 .fresh .txt {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    width: 350px;
+    height: 220px;
+    margin-left: -170px;
+    margin-top: -80px;
+    z-index: 2;
+}
+.product .pro2 .fresh .txt i {
+    font-size: 30px;
+    color: #38332D;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product .pro2 .fresh .txt h6 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.5s;
+}
+.product .pro2 .fresh .txt span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #988E82;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* 호버 설정 */
+.product .slider .pro2 .fresh .txt i:hover {
+    color: #F9CBAB;
+}
+
+.product .slider .pro2 .fresh:hover .bottle {
+    transform: rotate(-10.85deg);
+    filter:drop-shadow(0px 108px 43px rgba(0, 0, 0, 0.01)) drop-shadow(0px 61px 37px rgba(0, 0, 0, 0.05)) drop-shadow(0px 27px 27px rgba(0, 0, 0, 0.09)) drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.1));
+}
+.product .slider .pro2 .fresh:hover .txt span {
+    opacity: 1;
+}
+
+.product .slider .pro2 .fresh:hover .hover {
+    opacity: 1;
+}
+
+.product .slider .pro2 .fresh:hover .txt h6 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+
+
+
+
+/* 화살표 설정 */
+.product .left {
+    cursor: pointer;
+    border: 3px solid #38332D;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    z-index: 10;
+}
+.product .left i {
+    font-size: 35px;
+}
+
+.product .right {
+    cursor: pointer;
+    border: 3px solid #38332D;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    z-index: 10;
+}
+.product .right i {
+    font-size: 35px;
+
+}
+
+/* 버튼 호버 */
+.product .left:hover {
+    border-color: #F9CBAB;
+}
+.product .left:hover i {
+    color: #F9CBAB;
+}
+.product .right:hover {
+    border-color: #F9CBAB;
+}
+.product .right:hover i {
+    color: #F9CBAB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 세번째 섹션 설정---------------------- */
+.history {
+    background-color: #FAEBB7;
+    height: 400vh;
+    width: 100%;
+    margin-top: 150px;
+    padding: 40px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.history_inner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* 꽃 이미지 설정 */
+.history_inner .flower1 {
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.history_inner .flower1 img {
+    transform: scale(0.9);
+}
+
+
+.history_inner .flower2 {
+    position: absolute;
+    top: 530px; 
+    left: 20%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+/* 외부 텍스트 설정 */
+.history_inner span {
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    z-index: 13;
+    top: 0;
+    left: 40px;
+}
+.history_inner h3 {
+    font-size: 150px;
+    letter-spacing: 20px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 42%;
+    top: 570px;
+    z-index: 10;
+
+}
+
+
+
+/* 스크롤 이미지 설정 */
+.history_inner ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.history_inner .history01 {
+    right: 400px;
+    transform: translateY(-10px);
+}
+.history_inner .history02 {
+    transform: translateY(0px);
+    top: -400px;
+}
+
+.history_inner li {
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    width: 347px;
+    height: 533px;
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+/* 이미지 크기 설정 */
+/* 왼 */
+.history .history01 li .img {
+    width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -150px;
+}
+.history_inner .history01 li:nth-child(1) .img {
+
+}
+.history_inner .history01 li:nth-child(1) .img img {
+    transform: scale(0.6) translate(-160px, -40px);
+}
+.history_inner .history01 li:nth-child(2) .img {}
+.history_inner .history01 li:nth-child(2) .img img {
+    transform: scale(0.3);
+}
+
+/* 오 */
+.history .history02 li .img {
+    width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -150px;
+}
+.history_inner .history02 li:nth-child(1) .img {}
+.history_inner .history02 li:nth-child(1) .img img {
+    transform: scale(0.3) translate(-160px, 150px);
+}
+.history_inner .history02 li:nth-child(2) .img {}
+.history_inner .history02 li:nth-child(2) .img img {
+    transform: scale(0.2);
+}
+
+/* 마우스 호버 */
+.history_inner li:hover {
+    filter: drop-shadow(0px 187px 75px rgba(0, 0, 0, 0.01)) drop-shadow(0px 105px 63px rgba(0, 0, 0, 0.05)) drop-shadow(0px 47px 47px rgba(0, 0, 0, 0.09)) drop-shadow(0px 12px 26px rgba(0, 0, 0, 0.1));
+}
+
+
+
+/* 텍스트 설정 */
+/* 년도 설정 */
+/* 왼 */
+.history .history01 li strong {
+    position: absolute;
+    z-index: 1;
+    color: rgba(255, 253, 239, 0.9);
+    font-size: 70px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+
+    
+}
+
+.history .history01 li:nth-child(1) strong {
+    top: 60%;
+    left: 40%;
+    margin-left: -5px;
+    margin-top: 5px;
+}
+.history .history01 li:nth-child(2) strong {
+    top: 60%;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: -10px;
+
+}
+
+
+/* 오 */
+.history .history02 li strong {
+    position: absolute;
+    z-index: 1;
+    color: rgba(255, 253, 239, 0.9);
+    font-size: 70px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+
+    
+}
+
+.history .history02 li:nth-child(1) strong {
+    top: 60%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: 5px;
+}
+.history .history02 li:nth-child(2) strong {
+    top: 60%;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: -30px;
+
+}
+
+
+/* 설명 설정 */
+/* 왼 */
+.history .history01 li .txt {
+    position: absolute;
+    text-align: left;
+    top: 80%;
+    left:25px;
+    margin-top: -10px;
+}
+
+.history .history01 li .txt h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+}
+.history .history01 li .txt p {
+    font-size: 16px;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 2px;
+    color: #988E82;
+    margin-top: 15px;
+}
+
+
+
+/* 오 */
+.history .history02 li .txt {
+    position: absolute;
+    text-align: left;
+    top: 80%;
+    left:25px;
+    margin-top: -10px;
+}
+
+
+.history .history02 li .txt h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+}
+.history .history02 li .txt p {
+    font-size: 16px;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 2px;
+    color: #988E82;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* 네번째 섹션 설정------------------------- */
+.daisy {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+}
+.daisy_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}   
+
+
+/* 이미지 설정 */
+.daisy_inner .imglist {
+    width: 50%;
+    position: relative;
+}
+.daisy_inner .imglist .img {
+    width: 620px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.daisy_inner .imglist .img img {
+    transform: scale(0.9);
+}
+
+
+.daisy_inner .imglist .border1 {
+    width: 200px;
+    height: 200px;
+    border: 5px dashed #C9E7FE;
+    border-radius: 200px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.daisy_inner .imglist .white {
+    position: absolute;
+    left: 320px;
+    top: 60px;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.daisy_inner .imglist .border2 {
+    width: 190px;
+    height: 190px;
+    border: 5px dashed #FEE9B2;
+    border-radius: 200px;
+    position: absolute;
+    top: 30%;
+    left: -100px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.daisy_inner .imglist .sandal {
+    position: absolute;
+    top: 35%;
+    left: -40px;
+    margin-left: -20px;
+    z-index: -1;
+}
+
+
+.daisy_inner .imglist .border3 {
+    border: 5px dashed #FFD1D4;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 80px;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+
+.daisy_inner .imglist .wild {
+    position: absolute;
+    bottom: 140px;
+    left: 80px;
+    margin-left: -20px;
+    z-index: -1;
+}
+
+
+.daisy_inner .imglist span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #988E82;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+
+
+
+/* 호버설정 */
+.daisy_inner .imglist:hover .border1 {
+    transform: scale(1.1);
+}
+.daisy_inner .imglist:hover .border2 {
+    transform: scale(1.1);
+}
+.daisy_inner .imglist:hover .border3 {
+    transform: scale(1.1);
+}
+.daisy_inner .imglist:hover span {
+    transform:  scale(1.2);
+}
+
+
+/* 텍스트 설정 */
+.daisy_inner .txt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.daisy_inner .txt .title {
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 10px;
+    border-top: 3px dashed #F9CBAB;
+    border-bottom: 3px dashed #F9CBAB;;
+    padding: 10px 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.daisy_inner .txt .title h3 {
+    font-size: 50px;
+    font-weight: 500;
+}
+.daisy_inner .txt .title h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+.daisy_inner .txt p {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 30px;
+    font-family: "Gothic A1", sans-serif;
+}
+.daisy_inner .txt p:nth-child(4) {
+    margin-top: 25px;
+}
+.daisy_inner .txt span {
+    margin-top: 30px;
+}
+.daisy_inner .txt span a {
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
+    width: 260px;
+    background-color: #534439;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+}
+
+
+.daisy_inner .txt span:hover a {
+    color: #F9CBAB;
+}
+
+
+
+
+/* 다섯번째 섹션 설정---------------------------- */
+.email {
+    margin-top: 150px;
+    background-image: url(img/bg001.png);
+    background-attachment: fixed;
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.email_inner {
+    display: flex;
+    width: 100%;
+}
+.email .input {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.email_inner .input .email_enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#email {
+    width: 435px;
+    height: 71px;
+    border: 1px solid #E6F4F1;
+    background-color: rgba(237, 252, 255, 0.4);
+}
+#email::placeholder {
+    font-family: "Kanit", sans-serif;
+    color: #479FC7;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+
+
+.email .input span {}
+.email .input span a {
+    color: #479FC7;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 116px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6F4F1;
+    border: 1px solid #E6F4F1;
+
+}
+.email .input p {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 3px;
+    color: #E8FEF9;
+}
+.email .txt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.email .txt h3 {
+    font-size: 140px;
+    color: #FFEA7E;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 25px;
+}
+.email .txt h3:nth-child(2) {
+    letter-spacing: 75px;
+    padding-left: 55px;
+}
+
+
+
+/* 푸터 설정 */
+footer {
+    height: 200px;
+    background-color: #333;
+}
+footer h5 {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 서브페이지 설정-------------------------------------------------------------------------- */
+
+.sub {}
+
+
+/* 서브페이지 첫번째 섹션 설정 */
+.sub .intro {}
+
+.sub .intro_inner {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub .intro_inner .border {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-top: dashed 2px #38332D;
+    z-index: 50;
+    top: 45px;
+    left: 0;
+
+}
+
+/* 소개 페이지 향수 노트 소개 */
+.sub .intro_inner .note {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub .intro_inner .note ul {}
+.sub .intro_inner .note li {
+    font-family: "Kanit", sans-serif;
+    border-bottom: 2px dashed #38332D;
+    width: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.sub .intro_inner .note li h2 {
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #38332D;
+}
+.sub .intro_inner .note li p {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #38332D;
+}
+
+
+/* 향수 이미지 썸네일 */
+.sub .intro_inner .slide {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.sub .intro_inner .slide li {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    transition: all 0.2s;
+}
+
+.sub .intro_inner .slide li:hover {
+    transform: translateY(15px);
+}
+
+.sub .intro_inner .slide li img {
+    transform: scale(0.13);
+}
+
+
+
+/* 향수 큰 이미지 */
+.sub .intro_inner .bigImg {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.sub .intro_inner .bigImg ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sub .intro_inner .bigImg li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sub .intro_inner .bigImg img {}
+.sub .intro_inner .bigImg .first {
+    display: flex;
+}
+
+/* 향수 가격 */
+.sub .intro_inner .price {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub .intro_inner .price ul {}
+.sub .intro_inner .price li {
+    padding-top: 25px;
+}
+
+.sub .intro_inner .price h1 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 35px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.sub .intro_inner .price h3 {
+    font-size: 16px;
+    color: #988E82;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.sub .intro_inner .price h2 {
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-style: normal;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: normal;
+}
+
+
+.sub .intro_inner .price .p_border {
+    border-top: 2px dashed #38332D;
+    border-bottom: 2px dashed #38332D;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub .intro_inner .price .p_border span {
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+}
+.sub .intro_inner .price .p_border span:nth-child(1) {
+    cursor: pointer;
+    padding: 0 35px;
+}
+.sub .intro_inner .price .p_border span:nth-child(3) {
+    cursor: pointer;
+    padding: 0 35px;
+}
+
+.sub .intro_inner .price ul li:nth-child(2) {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500; 
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.sub .intro_inner .price ul li span {}
+.sub .intro_inner .price ul li span a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    border: 2px solid #38332D;
+    padding: 20px 0;
+    letter-spacing: 5px;
+    transition: all 0.2s;
+}
+
+.sub .intro_inner .price ul li:nth-child(4) {
+    margin-top: 40px;
+}
+.sub .intro_inner .price ul li:nth-child(5) {
+    padding-top: 15px;
+}
+
+.sub .intro_inner .price ul li:nth-child(4) span a {
+    background-color: #F9CBAB;
+    border-color: #F9CBAB;
+}
+
+
+/* 마우스 호버 */
+.sub .intro_inner .price ul li:nth-child(5):hover span a{
+    background-color: #38332D;
+    color: #fff;
+}
+.sub .intro_inner .price ul li:nth-child(4):hover span a{
+    background-color: transparent;
+    color: #F9CBAB;
+}
+
+
+
+
+
+/* 두번째 섹션설정 */
+.sub .detail {
+    margin-top: 80px;
+}
+.sub .detail .line {
+    border-top: dashed 2px #988E82;
+    margin: 0 auto;
+    width: 1700px;
+}
+.sub .detail_inner {}
+
+
+
+/* 두번째섹션 타이틀 설정 */
+.sub .detail_inner .title {
+    border-top: 3px dashed #CBDDEB;
+    border-bottom: 3px dashed #CBDDEB;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 15px 0;
+}
+.sub .detail_inner .title h1 {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 45px;
+}
+.sub .detail_inner .title h1 span {
+    font-size: 30px;
+}
+
+.sub .detail_inner p {
+    text-align: center;
+    font-size: 18px;
+    color: #38332D;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.sub .detail_inner .imgBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sub .detail_inner .imgBox .mainImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub .detail_inner .imgBox .mainImg .img4 {
+    width: 495px;
+    height: 509px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.sub .detail_inner .imgBox .mainImg .img4 img {
+    transform: scale(0.5);
+}
+
+
+.sub .detail_inner .imgBox .imglist {
+    width: 50%;
+    position: relative;
+}
+
+
+.sub .detail_inner .imgBox .imglist .img1 {
+    width: 290px;
+    height: 290px;
+    background-color: rebeccapurple;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+.sub .detail_inner .imgBox .imglist .img1 img {
+    transform: scale(0.5);
+}
+.sub .detail_inner .imgBox .imglist .img2 {
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 330px;
+    left: 250px;
+}
+.sub .detail_inner .imgBox .imglist .img2 img {
+    transform: scale(0.5);
+}
+.sub .detail_inner .imgBox .imglist .img3 {
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+}
+.sub .detail_inner .imgBox .imglist .img3 img {
+    transform: scale(0.5);
+}
+
+
+
+
+
+
+
+
+
+
+/* 세번째 섹션설정 */
+.sub .recommend {}
+.sub .recommend .line {
+    background-color: #38332D;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.sub .recommend .line ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub .recommend .line li {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+.sub .recommend .line li em {
+    margin-right: 50px;
+}
+.sub .recommend_inner {
+    height: 850px;
+}
+
+
+
+/* 추천 제품 제목 설정 */
+.sub .recommend_inner .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border-top: 3px dashed #F9CBAB;
+    border-bottom: 3px dashed #F9CBAB;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 60px;
+
+}
+.sub .recommend_inner .title h1 {
+    font-family: "Kanit", sans-serif;
+    color: #38332D;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+
+.sub .recommend_inner .img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.sub .recommend_inner .img ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.sub .recommend_inner .img li {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.sub .recommend_inner .img li:nth-child(1) img {
+    transform: scale(0.2);
+}
+.sub .recommend_inner .img li:nth-child(2) img {
+    transform: scale(0.3);
+}
+.sub .recommend_inner .img li:nth-child(3) img {
+    transform: scale(0.18);
+}
+.sub .recommend_inner .img a {}
+.sub .recommend_inner .img img {}
+
+
+.sub .recommend_inner .text {
+    width: 75%;
+    margin: 0 auto;
+}
+.sub .recommend_inner .text ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+}
+.sub .recommend_inner .text li {}
+.sub .recommend_inner .text li:nth-child(1) {
+    width: 300px;
+}
+.sub .recommend_inner .text li:nth-child(2) {
+    width: 300px;
+}
+.sub .recommend_inner .text li:nth-child(3) {
+    width: 300px;
+}
+.sub .recommend_inner .text a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #38332D;
+    display: block;
+    text-align: center;
+}
+.sub .recommend_inner .text h2 {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.sub .recommend_inner .text p {
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-top: 30px;
+}
+.sub .recommend_inner .text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.sub .recommend_inner .text span a {
+    font-family: "Kanit", sans-serif;
+    color: #38332D;
+    font-weight: 500;
+    width: 80px;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    border: 2px solid #38332D;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    transition: all 0.2s;
+    letter-spacing: 2px;
+}
+
+.sub .recommend_inner .text span a:hover {
+    background-color: #38332D;
+    color: #fff;
+}
+
+
+
+/* 팝업창 설정 */
+.popUp {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    margin-top: -400px;    
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 99;
+    display: none;
+}
+
+.popUp span {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+    border: 2px dashed #38332D;
+    padding: 0 10px;
+    color: #38332D;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.popUp span:hover {
+    background-color: rgba(251 , 141, 117, 0.8);
+}
+
+.popUp .buy {
+    background-color: #fff;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #38332D;
+}
+
+.popUp .buy h2 {
+    font-weight: bold;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+
+}
+
+
+
+
+/* 장바구니 팝업 설정 */
+.cart_popUp {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.cart_popUp .cart_in {
+    width: 30%;
+    height: 70%;
+    left: 35%;
+    top: 10%;
+    background-color: #fff;
+    
+}
+.cart_popUp .cart_in .close {
+    position: absolute;
+    top: 18%;
+    left: 62%;
+    border: 2px dashed #38332D;
+    padding: 0 10px;
+    color: #38332D;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.cart_popUp .cart_in .close:hover {
+    background-color: rgba(251 , 141, 117, 0.8);
+}
+
+
+.cart_popUp .cart_in h2 {
+    color: #38332D;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.cart_popUp .cart_in h3 {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #988E82;
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 10px;
+
+}
+
+.cart_popUp .cart_in h3 em {
+    font-style: normal;
+}
+
+
+.cart_popUp .shoplist {
+    overflow-y: scroll;
+    position: absolute;
+    top: 40%;
+    margin-top: -40px;
+    left: 40%;
+    margin-left: -48px;
+    width: 25%;
+    height: 32%;
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #38332D;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.cart_popUp .shoplist>div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 2px dashed #ADA69F;
+}
+.cart_popUp .shoplist img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.cart_popUp .shoplist .cart-item {}
+.cart_popUp .shoplist .cart-item img {
+    width: 60px;
+    height: auto;
+  transform: scale(1.4) translateX(-5px);
+}
+
+.cart_popUp .btn {
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -15%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart_popUp .buy_btn {
+    width: 35%;
+    height: 80%;
+    border: 3px solid #F9CBAB;
+}
+.cart_popUp .buy_btn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 3.8;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    background-color: #F9CBAB;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.cart_popUp .buy_btn a:hover {
+    background-color: transparent;
+}
+
+.cart_popUp .remove_btn {
+    display: block;
+    line-height: 3.8;
+    width: 35%;
+    height: 80%;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: 3px solid #38332D;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cart_popUp .remove_btn:hover {
+    background-color: #38332D;
+    color: #fff;
+}
+
+/* 장바구니 추가 확인 팝업 */
+.cart_add {
+    position: fixed;
+    width: 500px;
+    height: 250px;
+    right: 10%;
+    top: 10%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #38332D;
+    
+    z-index: 999;
+    display: none;
+
+}
+.cart_add .close {
+    position: absolute;
+    border: 2px dashed #38332D;
+    padding: 0 10px;
+    color: #38332D;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    top: 10px;
+    right: 13px;
+}
+.cart_add .close:hover {
+    background-color: rgba(251 , 141, 117, 0.8);
+}
+.cart_add p {
+    font-weight: bold;
+    font-family: "Gothic A1", sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 ======================================== */
+@media(min-width:1285px) {
+    .daisy_inner,
+    .email_inner,
+    .detail_inner,
+    .recommend_inner
+    {   width: 1280px;
+        margin: 0 auto;
+    }
+}

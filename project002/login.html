@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+  
+
+
+
+
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+    <div class="outer">
+        <div class="login_inner">
+
+            <div class="logo" title="MAIN">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="login">
+                <h1>LOG IN</h1>
+                <form action="">
+
+                    <div class="id">
+                        <input type="text" placeholder="ID">
+                    </div>
+
+
+                    <div class="password">
+                        <input type="password" placeholder="Password">
+                    </div>
+                </form>
+
+                <div class="account">
+                    <ul>
+                        <li><a href="">Forgot password?</a></li>
+                        <li><a href="">Create Account</a></li>
+                    </ul>
+                </div>
+
+               
+                    <span class="loginbtn"><a href="">LOG IN</a></span>
+                    <div id="naver_id_login"></div>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+      <!-- //네이버 로그인 버튼 노출 영역 -->
+      <script type="text/javascript">
+        var naver_id_login = new naver_id_login("Q1XEzX3kwlb4ttfKEeb4", "http://young0505.dothome.co.kr/");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("white", 4, 60);
+        naver_id_login.setDomain("YOUR_SERVICE_URL");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+    </script>
+</body>
+
+</html>

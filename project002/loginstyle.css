@@ -1,0 +1,206 @@
+@charset 'utf-8';
+
+/* 폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+
+
+/* 로그인 페이지========================================== */
+.outer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.login_inner {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+
+/* 로그인 배경설정 */
+.bg {
+    background-image: url(img/login.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center -360px;
+    opacity: 0.8;
+    z-index: -1;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+.logo a {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.logo a img {
+    transform: scale(0.17);
+}
+
+
+
+.login {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px solid #38332D;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+.login h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #38332D;
+
+}
+.login form {}
+.login input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    color: #38332D;
+}
+.login input:focus {
+    outline: none;
+}
+.login form input::placeholder {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #988E82;
+    text-transform: uppercase;
+}
+.login form .id {
+    width: 380px;
+    height: 50px;
+    border-bottom: 3px dashed #38332D;
+}
+.login form .password {
+    width: 380px;
+    height: 50px;
+    margin-top: 30px;
+    border-bottom: 3px dashed #38332D;
+}
+
+.login .account {
+
+}
+.login .account ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.login .account li {
+    margin-top: 20px;
+}
+.login .account a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: #38332D;
+    padding: 10px 15px;
+    transition: all 0.5s;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.login .account a:hover {
+    opacity: 1;
+}
+
+
+
+.login span {
+    width: 280px;
+    height: 70px;
+
+
+}
+.login span a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 3.4;
+    color: #38332D;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.login span a:hover {
+    background-color: #fff;
+}
+
+.login .loginbtn {
+    background-color: #ccee8f;
+}
+
+.login #naver_id_login {
+    margin-top: -30px;
+}
+
+
+
+
+/* 미디어쿼리 ======================================== */
+@media(min-width:1285px) {
+    .login_inner
+    {   width: 1280px;
+        margin: 0 auto;
+    }
+}
