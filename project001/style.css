@@ -1,0 +1,7216 @@
+@charset 'utf-8';
+
+/* 폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Gowun+Batang&family=Hahmlet:wght@100..900&family=IBM+Plex+Sans+KR&family=Orbit&display=swap');
+
+/* .gowun-batang-regular {
+    font-family: "Gowun Batang", serif;
+  }
+  .ibm-plex-sans-kr-regular {
+    font-family: "IBM Plex Sans KR", sans-serif;
+  } 
+  
+  .orbit-regular {
+  font-family: "Orbit", sans-serif;
+}
+
+.diphylleia-regular {
+  font-family: "Diphylleia", serif;
+}
+
+.hahmlet-<uniquifier> {
+  font-family: "Hahmlet", serif;
+}
+*/
+
+
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.wrap {}
+
+/* 첫번째 섹션 설정 ========================= */
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-color: #FDFCDD;
+    position: relative;
+    background-image: url(img/landing007.png);
+    background-size: cover;
+    background-position: 0px -150px;
+    background-repeat: no-repeat;
+}
+
+
+/* 로고 설정 */
+header {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -127.5px;
+}
+
+header h1 {}
+
+header h1 a {
+    display: block;
+    width: 235px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header img {
+    transform: scale(0.9);
+}
+
+
+/* 유틸 설정 */
+.landing .util {
+    position: absolute;
+    cursor: pointer;
+    top: 100px;
+    left: 80%;
+    z-index: 99;
+}
+
+.landing .util h2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.landing .util h2:hover {
+    color: #A1DD93;
+    font-weight: bolder;
+}
+
+
+/* GNB 설정 */
+.landing nav {
+    background-color: #FEFEF3;
+    width: 1300px;
+    height: 90px;
+    border-radius: 30px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -625px;
+    z-index: 99;
+}
+
+.landing nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing nav li {}
+
+.landing nav a {
+    font-size: 20px;
+    color: #403F34;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing i {
+    display: none;
+}
+
+/* 마우스 호버 설정 */
+.landing nav a:hover {
+    font-weight: bold;
+}
+
+.landing nav a:hover .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #A1DD93;
+    border-radius: 50%;
+}
+
+/* 랜딩 텍스트 설정 */
+.landing .hero {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+}
+
+.landing .hero p {
+    color: #ACC2D9;
+}
+
+
+.landing .hero .txt001 {
+    font-size: 23px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 5px;
+}
+
+.landing .hero .txt002 {
+    font-size: 35px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 10px;
+    text-align: right;
+
+}
+
+.landing .hero h4 {
+    letter-spacing: 25px;
+    font-size: 35px;
+    color: #8D9FB2;
+    font-weight: normal;
+    font-family: "Orbit", sans-serif;
+}
+
+.landing .hero span {
+    color: #EDF6FF;
+    -webkit-text-stroke: 1px #8D9FB2;
+}
+
+.landing .hero h3 {
+    font-size: 90px;
+    font-weight: normal;
+    color: #70A2D7;
+    font-family: "Hahmlet", serif;
+    letter-spacing: 50px;
+}
+
+
+
+/* 랜딩 이미지 설정 */
+.landing .image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-top: -60px;
+    margin-left: -150px;
+    overflow: hidden;
+    /* background-color: rebeccapurple; */
+}
+
+.landing .image img {
+    transform: scale(0.9)
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 수목원 소개 섹션 ============================= */
+.intro {
+    width: 100%;
+    height: 1300px;
+}
+
+.intro_inner {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/* 타이틀 설정 */
+.intro_inner .bar {
+    width: 50px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.intro_inner .intro_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.intro_inner .intro_title .leaf {
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.intro_inner .intro_title .leaf img {
+    transform: scale(0.01);
+}
+
+.intro_inner .intro_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.intro_inner h2 {
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    color: #636250;
+    line-height: 1.8;
+}
+
+
+
+/* 리스트 박스 설정 */
+.intro .listBox {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #E5F8E1;
+    margin-top: 50px;
+}
+
+.intro .imgBox {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+
+.intro .imgBox ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .imgBox li {
+    transition: all 0.3s;
+}
+
+
+.intro .imgBox .content {}
+
+.intro .imgBox .content li {}
+
+
+
+
+.intro .imgBox .content h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 5px;
+    color: #434343;
+    margin-top: 20px;
+
+}
+
+.intro .imgBox .content h2 p {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #636250;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+.intro .dot {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin: 30px auto;
+
+}
+
+.intro .dot ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro .dot li {
+    cursor: pointer;
+
+}
+
+.intro .dot li>div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #A1DD93;
+}
+
+
+.listBox .imgBox .content li:hover {
+    transform: translateY(-20px);
+}
+
+
+.dot li>div.on {
+    background-color: #70A2D7 !important;
+}
+
+
+
+/* 공지사항 설정 ========================= */
+.notice {
+    width: 100%;
+    height: auto;
+}
+
+.notice_inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* 공지사항 타이틀 설정 */
+.notice_inner .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+}
+
+.notice_inner .notice_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+.notice_inner .notice_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.notice_inner .notice_title .leaf img {
+    transform: scale(0.016) rotate(90deg);
+}
+
+.notice_inner .notice_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+.notice_inner .mobile_title i {
+    display: none;
+}
+
+
+/* 공지사항 설정 */
+.notice_inner .txtBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.notice_inner .txtBox ul {}
+
+.notice_inner .txtBox li {
+    border-bottom: 2px dashed #A0A0A0;
+    padding: 15px 0;
+    position: relative;
+
+}
+
+.notice_inner .txtBox li:nth-child(3) {
+    border: none;
+}
+
+
+.notice_inner .txtBox .circle {
+    width: 95px;
+    height: 95px;
+    background-color: #A1DD93;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.notice_inner .txtBox li a {
+    display: flex;
+}
+
+.notice_inner .txtBox li a .date {
+    width: 20%;
+    height: 120px;
+    border: 3px solid #F47C7D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.notice_inner .txtBox li a .date h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+.notice_inner .txtBox li a .date span {
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.notice_inner .txtBox li a .txt {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.notice_inner .txtBox li a .txt h2 {
+    color: #403F34;
+    font-size: 20px;
+}
+
+.notice_inner .txtBox li a .txt p {
+    color: #403F34;
+    font-size: 20px;
+}
+
+.notice_inner .txtBox li:hover .circle {
+    opacity: 1;
+}
+
+
+
+/* 배너 설정 */
+.notice_inner .imgBox {
+    width: 50%;
+    position: relative;
+}
+
+.notice_inner .imgBox .banner {
+    width: 475px;
+    height: 465px;
+    margin: 0 auto;
+}
+
+.notice_inner .imgBox .banner ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.notice_inner .imgBox .banner ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.notice_inner .imgBox .banner ul li:nth-child(2) {
+    left: 100%;
+}
+
+.notice_inner .imgBox .banner ul li img {}
+
+
+
+.notice_inner .imgBox .dot {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+}
+
+.notice_inner .imgBox .dot ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    height: auto;
+}
+
+.notice_inner .imgBox .dot li {}
+
+.notice_inner .imgBox .dot li>div {
+    width: 20px;
+    height: 20px;
+    background-color: #EDF6FF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notice_inner .imgBox .dot li.on div {
+    background-color: #70A2D7;
+}
+
+.notice_inner .imgBox .dot li:hover div {
+    background-color: #70A2D7;
+}
+
+
+
+
+/* 갤러리 설정------------------------------- */
+.photo {
+    width: 100%;
+    height: 1100px;
+    background-color: #FDFCDD;
+    margin-top: 150px;
+    padding: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* 갤러리 타이틀 설정 */
+.photo .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+
+}
+
+.photo .photo_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.photo .photo_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.photo .photo_title .leaf img {
+    transform: scale(0.016) rotate(180deg) translateY(350px);
+}
+
+.photo .photo_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+
+
+.photo .listBox {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.photo ul {
+    display: flex;
+}
+
+
+.photo .listBox .above {
+    position: absolute;
+    top: 5%;
+    left: 0;
+
+}
+
+.photo .listBox .under {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+.photo .listBox ul li {}
+
+.photo .listBox ul li a {
+
+    width: 500px;
+    height: 360px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.photo .listBox ul li img {
+    transform: scale(0.1);
+}
+
+.photo .listBox .above li:nth-child(3) img {
+    transform: scale(0.2);
+}
+
+.photo .listBox .under li:nth-child(2) img {
+    transform: scale(0.2);
+}
+
+.photo .listBox .under li:nth-child(3) img {
+    transform: scale(0.2);
+}
+
+.photo .listBox .under li:nth-child(4) img {
+    transform: scale(0.2);
+}
+
+
+.photo .listBox ul li a:hover {
+    box-shadow: 5px 5px 10px #A0A0A0;
+    transform: scale(1.05);
+}
+
+
+/* 화살표 설정 */
+/* 갤러리 호버 아이콘 설정 */
+
+
+.photo i {
+    color: #636250;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.photo .listBox .left_hover {
+    height: 957px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+
+.photo .listBox .right_hover {
+    height: 957px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* 갤러리 마우스 호버효과 */
+.photo .listBox .left_hover:hover {
+    opacity: 1;
+}
+
+.photo .listBox .right_hover:hover {
+    opacity: 1;
+}
+
+
+
+
+/* 체험예약 설정===================================== */
+.booking {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.booking .booking_inner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #E2ECF7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+
+/* 예약 타이틀 설정 */
+.booking .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+
+}
+
+.booking .booking_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.booking .booking_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.booking .booking_title .leaf img {
+    transform: scale(0.016) rotate(270deg);
+}
+
+.booking .booking_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+.booking i {
+    display: none;
+}
+
+
+/* 달력설정 */
+.month {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.month .ui-datepicker {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    padding: 75px;
+
+}
+
+.ui-datepicker table {
+    width: 100%;
+    height: 100%;
+
+}
+
+.month .ui-datepicker .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+    color: #636250;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.ui-datepicker-prev {
+    background-image: url(img/angle-left.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.ui-datepicker-next {
+    background-image: url(img/angle-right.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-image: none !important;
+    /* 기본 배경 이미지 제거 */
+}
+
+.ui-datepicker-next-hover,
+.ui-datepicker-prev-hover {
+    opacity: 0;
+}
+
+.month .ui-datepicker td {
+    padding: 25px;
+}
+
+.month .ui-datepicker td a {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #636250;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.month a.ui-state-default {}
+
+.month a.ui-state-highlight {}
+
+.month a.ui-state-active {
+    background-color: #70A2D7;
+    border-radius: 50%;
+    color: #EDF6FF !important;
+}
+
+.ui-datepicker tr {
+    color: #8D9FB2;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+
+/* 신청폼 설정 */
+.form {
+    width: 35%;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.form input {}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.form label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #403F34;
+}
+
+
+/* 성함 설정 */
+#no1 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+    margin-left: -10px;
+}
+
+.form li:nth-child(1) {
+    width: 84%;
+    display: flex;
+    height: auto;
+}
+
+.form li:nth-child(1) label {
+    width: 10%;
+    height: 100%;
+}
+
+.form .name {
+    width: 280px;
+    height: 40px;
+}
+
+/* 전화번호 설정 */
+#no2 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+    margin-left: -10px;
+}
+
+.form li:nth-child(2) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(2) label {
+    width: 20%;
+    height: 100%;
+}
+
+.form li:nth-child(2) ::placeholder {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.form .phone {
+    width: 280px;
+    height: 40px;
+}
+
+
+
+/* 체험명 설정 */
+.form .booking_wrap {
+    display: flex;
+    width: 100%;
+}
+
+.form .booking_wrap2 {
+    width: 40%;
+
+}
+
+.form .booking_wrap2 label {}
+
+.form .booking_wrap3 {
+    width: 40%;
+    padding: 5px;
+
+}
+
+.form .booking_wrap3 label {
+    font-size: 20px;
+    font-weight: normal;
+    color: #636250;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* 체험 인원 설정 */
+.booking_wrap4 {
+    display: flex;
+    width: 100%;
+}
+
+.booking_wrap4 label {
+    width: 40%;
+}
+
+
+.person {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.person input {
+    width: 150px;
+    height: 30px;
+}
+
+
+/* 체험 시간 설정*/
+.form li:nth-child(5) label {
+    width: 40%;
+    height: 100%;
+}
+
+.form .times {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.form .times span {
+    border: 2px dotted #403F34;
+    font-size: 20px;
+    color: #636250;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+.form .times span:hover {
+    background-color: #F47C7D;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    font-weight: bold;
+}
+
+.form .times span:nth-child(4) {}
+
+
+
+/* 예약하기 버튼 설정 */
+.form .button span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.form .button span p {
+    color: #EDF6FF;
+    font-size: 25px;
+    font-family: "Gowun Batang", serif;
+    display: block;
+    padding: 20px 130px;
+    text-align: center;
+    background-color: #70A2D7;
+    border-radius: 10px;
+}
+
+
+
+/* 예약완료 팝업창 */
+.fixed {
+    position: fixed;
+    z-index: 99;
+    top: 5%;
+    left: 50%;
+    margin-left: -20%;
+    width: 40%;
+    height: 55%;
+    background-color: #FDFCDD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed article {
+    width: 90%;
+    height: 75%;
+    
+    margin: 0 auto;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #A0A0A0;
+    text-align: center;
+    
+}
+.fixed article p {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 40px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    margin-right: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+.fixed article p:hover {
+    background-color: #F47C7D;
+}
+.fixed article ul {}
+.fixed article li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #70A2D7;
+}
+.fixed article li b{
+    font-weight: normal;
+    font-size: 23px;
+    color: #1E1E1E;
+}
+
+.fixed article li span {
+    font-weight: normal;
+    font-size: 25px;
+    color: #1E1E1E;
+}
+.fixed article .done {
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.5;
+    color: #1E1E1E;
+}
+
+
+/* 리뷰설정 */
+/* .review_section {
+    background-color: #FBFAC5;
+    height: 140px;
+    width: 100%;
+}
+
+.review_section .review_inner {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper h3 {
+    font-family: "Gowun Batang", serif;
+    color: #F47C7D;
+    font-size: 30px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper ul {
+    width: 70%;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    top: 100%;
+    left: 30%;
+    margin-top: 140px;
+
+}
+
+.swiper li {
+    font-size: 25px;
+    color: #434343;
+    position: absolute;
+    transition: all 0.8s;
+    background-color: #FBFAC5;
+    left: 0;
+    top: 50%;
+    margin-top: -16.5px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+ */
+ .review_section {
+    background-color: #FBFAC5;
+    height: 140px;
+    width: 100%;
+}
+
+.review_section .review_inner {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper h3 {
+    font-family: "Gowun Batang", serif;
+    color: #F47C7D;
+    font-size: 30px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+}
+
+.swiper-wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.swiper-slide {
+    font-size: 25px;
+    color: #434343;
+    background-color: #FBFAC5;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    position: absolute;
+    top: 40%;
+    margin-top: -1px;
+    text-align: center;
+}
+
+
+
+/* 이용안내 설정 */
+/* 이용안내 레이아웃 설정 */
+.info_section {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.info_inner {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    width: 50%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.map {
+    width: 50%;
+    height: auto;
+}
+
+.mobile_info {}
+
+
+
+/* 이용안내 타이틀 설정 */
+/* 예약 타이틀 설정 */
+.info_inner .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+
+}
+
+.info_inner .info_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.info_inner .info_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.info_inner .info_title .leaf img {
+    transform: scale(0.016) translateY(300px);
+}
+
+.info_inner .info_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+.mobile_infotitle i {
+    display: none;
+}
+
+
+/* 이용안내 텍스트 설정 */
+
+.info h3 {
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info_inner h3 i {
+    color: #70A2D7;
+    font-size: 40px;
+
+}
+
+.info_inner h3 span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    color: #403F34;
+    width: 90%;
+}
+
+.info h4 {
+    color: #1E1E1E;
+    font-size: 33px;
+    letter-spacing: 10px;
+    margin: 15px 0;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.info h4 span {
+    border: 10px solid #F47C7D;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+}
+
+.info p {
+    color: #636250;
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+
+
+
+/* 오시는길 설정 */
+.map .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+
+}
+
+.map .map_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.map .map_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.map .map_title .leaf img {
+    transform: scale(0.016) translateY(300px);
+}
+
+.map .map_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+.map .map_title i {
+    display: none;
+}
+
+.map p {
+    font-weight: bold;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: block;
+    text-align: center;
+}
+
+.google {
+    text-align: center;
+}
+
+.google iframe {
+    width: 550px;
+    height: 600px;
+
+}
+
+
+
+/* 지역축제안내 설정 */
+/* 지역축제 타이틀 설정 */
+
+.festival_inner .bar {
+    width: 80px;
+    height: 10px;
+    background-color: #F7F48B;
+    margin: 0 auto;
+
+}
+
+.festival_inner .festival_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.festival_inner .festival_title .leaf {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.festival_inner .festival_title .leaf img {
+    transform: scale(0.016) translateY(300px) rotate(90deg);
+}
+
+.festival_inner .festival_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 15px;
+    font-size: 45px;
+}
+
+
+
+.festival_section {
+    background-image: url(img/festival_bg.jpg);
+    background-size: cover;
+    width: auto;
+    height: 850px;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.festival_inner {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* 지역축제 설정 */
+.festival_bg {
+    background-color: rgba(255, 255, 192, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+
+.festival_bg .local {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.festival_bg .garden {
+    width: 250px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.festival_bg .garden ul {
+    width: 100%;
+    height: 100%;
+}
+
+.festival_bg .garden li {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.festival_bg .garden li:nth-child(1) {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.festival_bg .garden li span {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 3.2;
+}
+
+
+
+.festival_bg .garden li:nth-child(1) img {
+    transform: scale(0.5);
+}
+
+
+.festival_bg .night {
+    width: 250px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.festival_bg .night ul {
+    width: 100%;
+    height: 100%;
+}
+
+.festival_bg .night li {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.festival_bg .night li:nth-child(1) {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.festival_bg .night li span {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 3.2;
+}
+
+
+
+.festival_bg .night li:nth-child(1) img {
+    transform: scale(0.5);
+}
+
+
+
+
+
+
+/* 링크 설정 */
+
+.festival_inner .link {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.festival_inner .link h3 {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 35px;
+    letter-spacing: 15px;
+    width: 60%;
+    height: auto;
+    color: #403F34;
+    font-weight: normal;
+}
+
+.festival_inner .link h3 em {
+    color: #F47C7D;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+.link div a {
+
+    display: block;
+    padding: 20px;
+}
+
+.link div a:hover {
+    text-decoration: underline;
+}
+
+.link div i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 20px;
+    color: #403F34;
+}
+
+
+/* 링크 이미지 설정 */
+/* 비짓전주 */
+.link .visit {
+    /* position: relative; */
+    margin-top: 20px;
+}
+
+.link .visit a {
+    position: relative;
+    background-color: #E1EFFF;
+    padding: 33px 0;
+    width: 350px;
+    display: flex;
+
+}
+
+.link .visit a p {
+    color: #403F34;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+.link .visit img {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+/* 한옥마을 */
+.link .hanok {
+    /* position: relative; */
+    margin-top: 20px;
+}
+
+.link .hanok a {
+    position: relative;
+    background-color: #E1EFFF;
+    padding: 33px 0;
+    width: 350px;
+    display: flex;
+}
+
+.link .hanok p {
+    color: #403F34;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.link .hanok img {
+    width: 75px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 설정=========================================================================================================================================================== */
+/* 모바일 설정 393px */
+@media(max-width:440px) {
+
+
+    .wrap {
+        
+    }
+
+    .landing {
+       width: 100%;
+       height: 100%;
+       background-color: #FDFCDD;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: none;
+    }
+
+
+    /* 로고 설정 */
+    header {
+        position: absolute;
+        top: 50px;
+        margin-top: 20px;
+        left: 35%;
+
+        z-index: 99;
+    }
+
+    header h1 {}
+
+    header h1 a {
+        display: block;
+        width: 180px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    header img {
+        transform: scale(0.6);
+    }
+
+
+    /* 유틸 설정 */
+    .landing .util {
+        display: none;
+    }
+
+
+    /* GNB 설정 */
+    .landing nav {
+        display: none;
+    }
+
+    .landing i {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        right: 10%;
+        top: 50px;
+        margin-top: 30px;
+        margin-right: -15px;
+        color: #636250;
+        cursor: pointer;
+    }
+
+
+    /* 랜딩 텍스트 설정 */
+    .landing .hero {
+        display: none;
+    }
+
+    .landing .hero p {
+        display: none;
+    }
+
+
+    .landing .hero .txt001 {
+        display: none;
+    }
+
+    .landing .hero .txt002 {
+        display: none;
+
+    }
+
+    .landing .hero h4 {
+        display: none;
+    }
+
+    .landing .hero span {
+        display: none;
+    }
+
+    .landing .hero h3 {
+        display: none;
+    }
+
+
+
+    /* 랜딩 이미지 설정 */
+    .landing .image {
+        display: none;
+    }
+
+    /* 수목원 소개 섹션 ============================= */
+    .intro {
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       top: 0;
+       left: 0;
+    }
+
+    .intro_inner {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    /* 타이틀 설정 */
+    .intro_inner .bar,
+    .intro_inner .intro_title,
+    .intro_inner .intro_title .leaf,
+    .intro_inner h2 {
+        display: none;
+    }
+
+
+
+    /* 리스트 박스 설정 */
+    .intro .listBox {
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 15%;
+        z-index: 1;
+    }
+
+    .intro .listBox .imgBox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .intro .imgBox .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 13%;
+        width: 100%;
+        height: auto;
+    }
+
+    .intro .imgBox .content li {
+        width: 33.333%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: none;
+    }
+
+
+    .intro .imgBox .content li img {
+        width: 180px;
+        height: auto;
+    }
+
+    .intro .imgBox .content h2 {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+    }
+
+    .intro .imgBox .content h2 p {
+        display: none;
+    }
+
+
+    .intro .dot {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        margin-left: -22.5%;
+        margin-top: 0px;
+    }
+    
+    .intro .dot ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .intro .dot li {
+        cursor: pointer;
+    
+    }
+    
+    .intro .dot li>div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #A1DD93;
+    }
+
+
+    .intro .dot li>div.on {
+        background-color: #70A2D7;
+    }
+
+    /* 공지사항 설정 ========== ----------------끝 -------------=============== */
+
+    .notice {
+        margin-top: 0px;
+    }
+
+    /* 공지사항 타이틀 설정 */
+    .notice_inner .bar {
+        display: none;
+    }
+
+    .notice_inner .notice_title {
+        width: 25%;
+        height: auto;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 80%;
+        margin-top: -15px;
+        left: 50%;
+        cursor: pointer;
+        border-left: 1px dashed #A0A0A0;
+    }
+
+
+
+    .notice_inner .notice_title .leaf {
+        display: none;
+    }
+
+
+    .notice_inner .notice_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 0px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .notice_inner .mobile_title i {
+        display: flex;
+        justify-content: center;
+        color: #30475F;
+        font-size: 35px;
+    }
+
+
+    /* 모바일 공지사항 설정 */
+    .notice_inner .txtBox {
+        display: none;
+    }
+
+
+    /* 모바일 배너 설정 */
+    .notice_inner .imgBox {
+       display: none;
+    }
+
+
+
+    /* 모바일 갤러리 설정 */
+    .photo {
+        display: none;
+    }
+
+
+
+    /* 모바일 체험예약 설정===================================== */
+   
+    .booking .booking_inner {
+      display: none;
+
+    }
+
+    .booking {
+        width: 0;
+        height: 0;
+    }
+
+
+    /* 모바일 예약 타이틀 설정 */
+    .booking .bar {
+     display: none;
+
+    }
+
+    .booking .booking_title {
+        width: 25%;
+        height: auto;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 80%;
+        margin-top: -15px;
+        left: 0;
+        cursor: pointer;
+       
+    }
+
+
+
+    .booking .booking_title .leaf {
+       display: none;
+    }
+
+    .booking .booking_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 0px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .booking i {
+        display: flex;
+        justify-content: center;
+        color: #30475F;
+        font-size: 35px;
+    }
+
+
+
+    /* 달력설정 */
+    .month {
+       display: none;
+    }
+
+   
+    /* 신청폼 설정 */
+    .form {
+       display: none;
+    }
+
+   
+    /* 리뷰설정 */
+    .review_section {
+        display: none;
+    }
+
+
+    /* 이용안내 타이틀 설정 */
+    /*  타이틀 설정 */
+    .info_inner .bar {
+        display: none;
+    }
+
+    .info_inner {
+        width: 0;
+        height: 0;
+    }
+    .map {
+        width: 0;
+        height: 0;
+    }
+
+    .info .info_title {
+        width: 25%;
+        height: auto;
+        margin-bottom: 0px;
+        position: absolute;
+        left: 75%;
+        top: 80%;
+        margin-top: -15px;
+        cursor: pointer;
+        border-left: 1px dashed #A0A0A0;
+    }
+
+
+
+    .info_inner .info_title .leaf {
+        display: none;
+    }
+
+    .info_inner .info_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 0px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .mobile_infotitle i {
+        display: block;
+        color: #30475F;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* 이용안내 텍스트 설정 */
+
+    .info h3 {
+        display: none;
+    }
+
+    .info_inner h3 i {
+        display: none;
+    }
+
+    .info_inner h3 span {
+        display: none;
+    }
+
+    .info h4 {
+        display: none;
+    }
+
+    .info h4 span {
+        display: none;
+    }
+
+    .info p {
+        display: none;
+    }
+
+
+
+
+
+
+    /* 오시는길 설정 */
+    .map .bar {
+        display: none;
+
+    }
+
+    .map .map_title {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 80%;
+        margin-top: -15px;
+        left: 25%;
+        border-left: 1px dashed #A0A0A0;
+    }
+
+
+
+    .map .map_title .leaf {
+        display: none;
+    }
+
+    .map .map_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 0;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .map .map_title i {
+        display: flex;
+        justify-content: center;
+        color: #30475F;
+        font-size: 35px;
+    }
+
+    .map p {
+        display: none;
+    }
+
+    .google {
+        display: none;
+    }
+
+
+
+
+
+
+    /* 모바일 지역축제 설정 */
+    .festival_section {
+        display: none;
+    }
+
+
+}
+
+/* 모바일 끝 */
+
+
+
+
+
+
+
+
+@media(min-width:441px) and (max-width:549px) {
+    .landing {
+        width: 100%;
+        height: 500px;
+        background-color: #FDFCDD;
+        position: relative;
+        background-image: url(img/landing007.png);
+        background-size: cover;
+        background-position: -250px 65px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* 로고 설정 */
+    header {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -80px;
+        z-index: 99;
+    }
+
+    header h1 {}
+
+    header h1 a {
+        display: block;
+        width: 180px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    header img {
+        transform: scale(0.6);
+    }
+
+
+    /* 유틸 설정 */
+    .landing .util {
+        display: none;
+    }
+
+
+    /* GNB 설정 */
+    .landing nav {
+        display: none;
+    }
+
+    .landing i {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 10%;
+        top: 50px;
+        margin-right: -40px;
+        color: #636250;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+
+    /* 랜딩 텍스트 설정 */
+    .landing .hero {
+        position: absolute;
+        left: 50px;
+        top: 25%;
+    }
+
+    .landing .hero p {
+        color: #ACC2D9;
+    }
+
+
+    .landing .hero .txt001 {
+        font-size: 16px;
+        font-family: "Diphylleia", serif;
+        letter-spacing: 2px;
+    }
+
+    .landing .hero .txt002 {
+        font-size: 16px;
+        font-family: "Diphylleia", serif;
+        letter-spacing: 5px;
+        text-align: right;
+
+    }
+
+    .landing .hero h4 {
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: #8D9FB2;
+        font-weight: normal;
+        font-family: "Orbit", sans-serif;
+    }
+
+    .landing .hero span {
+        color: #EDF6FF;
+        -webkit-text-stroke: 1px #8D9FB2;
+    }
+
+    .landing .hero h3 {
+        font-size: 35px;
+        font-weight: normal;
+        color: #70A2D7;
+        font-family: "Hahmlet", serif;
+        letter-spacing: 25px;
+    }
+
+
+
+    /* 랜딩 이미지 설정 */
+    .landing .image {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -70px;
+        margin-left: -150px;
+        /* overflow: hidden; */
+    }
+
+    .landing .image img {
+        transform: scale(0.45);
+    }
+
+
+
+
+
+
+
+/* 인트로 리스트 박스 설정 */
+.intro {
+    width: 100%;
+    height: auto;
+}
+
+.intro_inner {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* 타이틀 설정 */
+.intro_inner .bar {
+    width: 50px;
+    height: 10px;
+    background-color: #A1DD93;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.intro_inner .intro_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.intro_inner .intro_title .leaf {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.intro_inner .intro_title .leaf img {
+    transform: scale(0.012);
+}
+
+.intro_inner .intro_title h1 {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+
+.intro_inner h2 {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    color: #636250;
+    line-height: 1.8;
+    width: 90%;
+    height: auto;
+}
+
+
+
+/* 리스트 박스 설정 */
+.intro .listBox {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #E5F8E1;
+    margin-top: 30px;
+}
+
+.intro .imgBox {
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.intro .imgBox ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.intro .imgBox li {
+    transition: all 0.3s;
+    /* padding: 20px;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    text-align: center; */
+}
+
+
+.intro .imgBox .content {}
+
+.intro .imgBox .content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+}
+
+.intro .imgBox .content li img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+.intro .imgBox .content h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 5px;
+    color: #434343;
+    margin-top: 20px;
+
+}
+
+.intro .imgBox .content h2 p {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #636250;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+.intro .dot {
+    display: none;
+
+}
+
+/* 공지사항 설정 */
+
+.notice {
+    margin-top: 100px;
+}
+.notice_inner .txtBox {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+
+.notice_inner .txtBox li a .date {
+    width: 20%;
+    height: 30%;
+}
+
+.notice_inner .txtBox li a .date h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.notice_inner .txtBox li a .date span {
+    font-size: 20px;
+}
+
+
+
+.notice_inner .txtBox li a .txt {
+    width: 80%;
+}
+
+.notice_inner .txtBox li a .txt h2 {
+    color: #403F34;
+    font-size: 18px;
+}
+
+.notice_inner .txtBox li a .txt p {
+    color: #403F34;
+    font-size: 18px;
+}
+
+
+
+/* 배너 설정 */
+.notice_inner .imgBox {
+    width: 90%;
+    height: 80%;
+    position: relative;
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+.notice_inner .imgBox .dot {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+}
+
+
+/* 갤러리 */
+.photo .photo_title h1 {
+    font-size: 30px;
+}
+.photo .listBox ul li a {
+    width: 300px;
+    height: 200px;
+}
+.photo .listBox ul li img {
+    transform: scale(0.08);
+}
+.photo .listBox .above {
+    position: absolute;
+    top: 5%;
+    left: 0;
+
+}
+
+.photo .listBox .under {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+
+/* 체험예약 설정===================================== */
+.booking {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.booking .booking_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #E2ECF7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* 달력설정 */
+.month {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.month .ui-datepicker {
+    width: 90%;
+    height: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 75px;
+
+}
+
+.ui-datepicker table {
+    width: 100%;
+    height: 100%;
+
+}
+
+.month .ui-datepicker .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+    color: #636250;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.ui-datepicker-prev {
+    background-image: url(img/angle-left.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.ui-datepicker-next {
+    background-image: url(img/angle-right.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-image: none !important;
+    /* 기본 배경 이미지 제거 */
+}
+
+.ui-datepicker-next-hover,
+.ui-datepicker-prev-hover {
+    opacity: 0;
+}
+
+.month .ui-datepicker td {
+    padding: 25px;
+}
+
+.month .ui-datepicker td a {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #636250;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.month a.ui-state-default {}
+
+.month a.ui-state-highlight {}
+
+.month a.ui-state-active {
+    background-color: #70A2D7;
+    border-radius: 50%;
+    color: #EDF6FF !important;
+}
+
+.ui-datepicker tr {
+    color: #8D9FB2;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+/* 신청폼 설정 */
+.form {
+    width: 100%;
+    height: 50%;
+    padding: 50px 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.form input {}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.form label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #403F34;
+}
+
+
+/* 성함 설정 */
+#no1 {
+    height: 40px;
+    width: 80%;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(1) {
+    width: 100%;
+    display: flex;
+    height: 20%;
+}
+
+.form li:nth-child(1) label {
+    width: 20%;
+    height: auto;
+    background-color: rebeccapurple;
+}
+
+.form .name {
+    width: 280px;
+    height: 40px;
+}
+
+/* 전화번호 설정 */
+#no2 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(2) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(2) label {
+    width: 20%;
+    height: 100%;
+}
+
+.form .phone {
+    width: 280px;
+    height: 40px;
+}
+
+
+
+/* 체험명 설정 */
+.form .booking_wrap {
+    display: flex;
+    width: 100%;
+}
+
+.form .booking_wrap2 {
+    width: 35%;
+}
+
+.form .booking_wrap3 {
+    width: 65%;
+}
+
+.form .booking_wrap3 label {
+    font-size: 20px;
+    font-weight: normal;
+    color: #636250;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* 체험 인원 설정 */
+.booking_wrap4 {
+    display: flex;
+    width: 100%;
+}
+
+.booking_wrap4 label {
+    width: 35%;
+}
+
+
+.person {
+    width: 65%;
+}
+
+.person input {
+    width: 150px;
+    height: 30px;
+}
+
+
+/* 체험 시간 설정*/
+.form li:nth-child(5) {
+    width: 100%;
+    display: flex;
+
+}
+
+.form li:nth-child(5) label {
+    width: 10%;
+    margin-right: 50px;
+}
+
+.form .times {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.form .times span {
+    border: 2px dotted #403F34;
+    font-size: 18px;
+    color: #636250;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.form .times span:hover {
+    background-color: #F47C7D;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    font-weight: bold;
+}
+
+
+
+
+/* 예약하기 버튼 설정 */
+.form .button span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+
+    
+}
+
+.form .button span p {
+    color: #EDF6FF;
+    font-size: 25px;
+    font-family: "Gowun Batang", serif;
+    padding: 20px 130px;
+    text-align: center;
+    background-color: #70A2D7;
+    border-radius: 10px;
+    display: block;
+}
+
+
+ /* 리뷰설정 */
+    /* 리뷰설정 */
+    .review_section {
+        background-color: #FBFAC5;
+        height: 140px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .review_section .review_inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper h3 {
+        font-family: "Gowun Batang", serif;
+        color: #F47C7D;
+        font-size: 25px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper ul {
+        width: 70%;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+        top: 100%;
+        left: 28%;
+        margin-top: 140px;
+
+    }
+
+    .swiper li {
+        font-size: 20px;
+        color: #434343;
+        position: absolute;
+        transition: all 0.8s;
+        background-color: #FBFAC5;
+        left: 0;
+        top: 50%;
+        margin-top: -10.5px;
+    }
+
+
+
+    .info_section {
+        margin-top: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .info_inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .map {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile_info {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+    .rest {
+        width: 50%;
+
+    }
+
+    .warning {
+        width: 50%;
+    }
+
+
+    /* 이용안내 텍스트 설정 */
+
+    .info h3 {
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .info_inner h3 i {
+        color: #70A2D7;
+        font-size: 25px;
+
+    }
+
+    .info_inner h3 span {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        letter-spacing: 0;
+        color: #403F34;
+        width: 90%;
+    }
+
+    .info h4 {
+        color: #1E1E1E;
+        font-size: 20px;
+        letter-spacing: 10px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+    }
+
+    .info h4 span {
+        border: 8px solid #F47C7D;
+        border-radius: 50%;
+        display: inline-block;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .info p {
+        text-align: center;
+        color: #636250;
+        font-size: 18px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+
+
+
+
+    /* 오시는길 설정 */
+    .map .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .map .map_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .map .map_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .map .map_title .leaf img {
+        transform: scale(0.0135) translateY(300px);
+    }
+
+    .map .map_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .map .map_title i {
+        display: none;
+    }
+
+    .map p {
+        font-weight: bold;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        letter-spacing: 5px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .google {
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .google iframe {
+        width: 85%;
+        height: 460px;
+
+    }
+
+
+
+
+     /* 지역축제 설정 */
+     .festival_bg {
+        background-color: rgba(255, 255, 192, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .festival_bg .local {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .festival_bg .garden {
+        width: 190px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .garden ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .garden li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .garden li:nth-child(1) {
+        width: 190px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .garden li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+
+    }
+
+
+
+    .festival_bg .garden li:nth-child(1) img {
+        transform: scale(0.4);
+    }
+
+
+    .festival_bg .night {
+        width: 190px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .night ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .night li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .night li:nth-child(1) {
+        width: 190px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .night li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+    }
+
+
+
+    .festival_bg .night li:nth-child(1) img {
+        transform: scale(0.5) translate(30px, -50px);
+    }
+
+
+
+
+    /* 링크 설정 */
+
+    .festival_inner .link {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .festival_inner .link h3 {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 25px;
+        letter-spacing: 25px;
+        width: 100%;
+        height: auto;
+        color: #403F34;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .festival_inner .link h3 em {
+        color: #F47C7D;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .link .link_2 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link div a {
+
+        display: block;
+        padding: 20px;
+    }
+
+    .link div a:hover {
+        text-decoration: underline;
+    }
+
+    .link div i {
+        font-size: 20px;
+        vertical-align: middle;
+        margin: 0 20px;
+        color: #403F34;
+    }
+
+
+    /* 링크 이미지 설정 */
+    /* 비짓전주 */
+    .link .visit {
+        /* position: relative; */
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .link .visit a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+
+    }
+
+    .link .visit a p {
+        color: #403F34;
+    }
+
+
+
+    .link .visit img {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        margin-top: 2px;
+    }
+
+    /* 한옥마을 */
+    .link .hanok {
+        /* position: relative; */
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link .hanok a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+    }
+
+    .link .hanok p {
+        color: #403F34;
+    }
+
+    .link .hanok img {
+        width: 75px;
+        height: 65px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+
+
+   
+
+
+
+}
+
+
+
+
+
+/* 태블릿 설정 834px ~ 550px */
+@media(min-width:550px) and (max-width:834px) {
+
+    .wrap {}
+
+    .landing {
+        width: 100%;
+        height: 500px;
+        background-color: #FDFCDD;
+        position: relative;
+        background-image: url(img/landing007.png);
+        background-size: cover;
+        background-position: 0px -50px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* 로고 설정 */
+    header {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -80px;
+        z-index: 99;
+    }
+
+    header h1 {}
+
+    header h1 a {
+        display: block;
+        width: 180px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    header img {
+        transform: scale(0.6);
+    }
+
+
+    /* 유틸 설정 */
+    .landing .util {
+        display: none;
+    }
+
+
+    /* GNB 설정 */
+    .landing nav {
+        display: none;
+    }
+
+    .landing i {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 10%;
+        top: 50px;
+        margin-right: -40px;
+        color: #636250;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+
+    /* 랜딩 텍스트 설정 */
+    .landing .hero {
+        position: absolute;
+        left: 50px;
+        top: 50%;
+    }
+
+    .landing .hero p {
+        color: #ACC2D9;
+    }
+
+
+    .landing .hero .txt001 {
+        font-size: 16px;
+        font-family: "Diphylleia", serif;
+        letter-spacing: 2px;
+    }
+
+    .landing .hero .txt002 {
+        font-size: 16px;
+        font-family: "Diphylleia", serif;
+        letter-spacing: 5px;
+        text-align: right;
+
+    }
+
+    .landing .hero h4 {
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: #8D9FB2;
+        font-weight: normal;
+        font-family: "Orbit", sans-serif;
+    }
+
+    .landing .hero span {
+        color: #EDF6FF;
+        -webkit-text-stroke: 1px #8D9FB2;
+    }
+
+    .landing .hero h3 {
+        font-size: 40px;
+        font-weight: normal;
+        color: #70A2D7;
+        font-family: "Hahmlet", serif;
+        letter-spacing: 25px;
+    }
+
+
+
+    /* 랜딩 이미지 설정 */
+    .landing .image {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 80%;
+        top: 45%;
+        margin-top: -70px;
+        margin-left: -185px;
+        overflow: hidden;
+    }
+
+    .landing .image img {
+        transform: scale(0.35);
+    }
+
+
+    /* 수목원 소개 섹션 ============================= */
+    .intro {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro_inner {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /* 타이틀 설정 */
+    .intro_inner .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .intro_inner .intro_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .intro_inner .intro_title .leaf {
+        width: 40px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+
+    .intro_inner .intro_title .leaf img {
+        transform: scale(0.012);
+    }
+
+    .intro_inner .intro_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 10px;
+        font-size: 35px;
+    }
+
+    .intro_inner h2 {
+        margin: 0 auto;
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        color: #636250;
+        line-height: 1.8;
+        width: 90%;
+        height: auto;
+    }
+
+
+
+    /* 리스트 박스 설정 */
+    .intro .listBox {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        background-color: #E5F8E1;
+        margin-top: 30px;
+    }
+
+    .intro .imgBox {
+        height: auto;
+        margin: 0 auto;
+        padding: 50px 10px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .intro .imgBox ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .intro .imgBox li {
+        transition: all 0.3s;
+        /* padding: 20px;
+        margin: 0 auto;
+        width: 40%;
+        height: auto;
+        text-align: center; */
+    }
+
+
+    .intro .imgBox .content {}
+
+    .intro .imgBox .content li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+        
+    }
+
+    .intro .imgBox .content li img {
+        width: 180px;
+        height: auto;
+    }
+
+
+
+
+    .intro .imgBox .content h2 {
+        text-align: center;
+        font-size: 26px;
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 5px;
+        color: #434343;
+        margin-top: 20px;
+
+    }
+
+    .intro .imgBox .content h2 p {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        color: #636250;
+        font-size: 16px;
+        letter-spacing: 5px;
+        font-weight: normal;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+    .intro .dot {
+        display: none;
+
+    }
+
+
+    /* 공지사항 설정 ========== ----------------끝 -------------=============== */
+
+    .notice {
+        margin-top: 100px;
+    }
+
+    /* 공지사항 타이틀 설정 */
+    .notice_inner .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+    }
+
+    .notice_inner .notice_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+
+    .notice_inner .notice_title .leaf {
+        width: 40px;
+        height: 50px;
+    }
+
+    .notice_inner .notice_title .leaf img {
+        transform: scale(0.0135) rotate(90deg) translateY(500px);
+    }
+
+    .notice_inner .notice_title h1 {
+        font-size: 35px;
+    }
+
+    .notice_inner .mobile_title i {
+        display: none;
+    }
+
+
+    /* 공지사항 설정 */
+    .notice_inner .txtBox {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+    .notice_inner .txtBox li a .date {
+        width: 15%;
+        height: 90px;
+    }
+
+    .notice_inner .txtBox li a .date h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 45px;
+    }
+
+    .notice_inner .txtBox li a .date span {
+        font-size: 20px;
+    }
+
+
+
+    .notice_inner .txtBox li a .txt {
+        width: 90%;
+    }
+
+    .notice_inner .txtBox li a .txt h2 {
+        color: #403F34;
+        font-size: 18px;
+    }
+
+    .notice_inner .txtBox li a .txt p {
+        color: #403F34;
+        font-size: 18px;
+    }
+
+
+
+    /* 배너 설정 */
+    .notice_inner .imgBox {
+        width: 100%;
+        position: relative;
+        display: flex;
+        margin-top: 50px;
+    }
+
+
+
+    .notice_inner .imgBox .dot {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        margin-left: -30px;
+        z-index: 2;
+    }
+
+
+
+
+    /* 갤러리 설정------------------------------- */
+    .photo {
+        width: 100%;
+        height: 800px;
+        background-color: #FDFCDD;
+        margin-top: 150px;
+        padding: 30px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+
+    /* 갤러리 타이틀 설정 */
+    .photo .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .photo .photo_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .photo .photo_title .leaf {
+        width: 40px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+
+    .photo .photo_title .leaf img {
+        transform: scale(0.014) rotate(180deg);
+    }
+
+    .photo .photo_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+
+
+    .photo .listBox {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .photo ul {
+        display: flex;
+    }
+
+
+    .photo .listBox .above {
+        position: absolute;
+        top: 5%;
+        left: 0;
+
+    }
+
+    .photo .listBox .under {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+    }
+
+    .photo .listBox ul li {}
+
+    .photo .listBox ul li a {
+
+        width: 360px;
+        height: 250px;
+        display: flex;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-left: 10px;
+        transition: all 0.5s;
+    }
+
+    .photo .listBox ul li img {
+        transform: scale(0.1);
+    }
+
+    .photo .listBox .above li:nth-child(3) img {
+        transform: scale(0.2);
+    }
+
+    .photo .listBox .under li:nth-child(2) img {
+        transform: scale(0.2);
+    }
+
+    .photo .listBox .under li:nth-child(3) img {
+        transform: scale(0.2);
+    }
+
+    .photo .listBox .under li:nth-child(4) img {
+        transform: scale(0.2);
+    }
+
+
+    .photo .listBox ul li a:hover {
+        box-shadow: 5px 5px 10px #A0A0A0;
+        transform: scale(1.05);
+    }
+
+
+    /* 화살표 설정 */
+    /* 갤러리 호버 아이콘 설정 */
+
+
+    .photo i {
+        color: #636250;
+        font-size: 50px;
+        cursor: pointer;
+
+    }
+
+    .photo .listBox .left_hover {
+        height: 100%;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -30px;
+        top: 0;
+        opacity: 0;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+
+    .photo .listBox .right_hover {
+        height: 100%;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -30px;
+        top: 0;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    /* 갤러리 마우스 호버효과 */
+    .photo .listBox .left_hover:hover {
+        opacity: 1;
+    }
+
+    .photo .listBox .right_hover:hover {
+        opacity: 1;
+    }
+
+
+
+    /* 체험예약 설정===================================== */
+    .booking {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .booking .booking_inner {
+        width: 100%;
+        height: 100%;
+        background-color: #E2ECF7;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    /* 예약 타이틀 설정 */
+    .booking .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .booking .booking_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .booking .booking_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .booking .booking_title .leaf img {
+        transform: scale(0.014) rotate(270deg) translateY(800px);
+    }
+
+    .booking .booking_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .booking i {
+        display: none;
+    }
+
+
+
+    /* 달력설정 */
+    .month {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .month .ui-datepicker {
+        width: 500px;
+        height: 600px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 30px;
+        overflow: hidden;
+        padding: 75px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+
+
+    }
+
+    .ui-datepicker table {
+        width: 500px;
+        height: 600px;
+
+    }
+
+    .month .ui-datepicker .ui-datepicker-header {
+        background-color: #fff;
+        border: none;
+        color: #636250;
+        font-size: 20px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        width: 100%;
+        height: 20px;
+
+    }
+
+
+    .ui-datepicker-prev {
+        background-image: url(img/angle-left.png);
+        background-size: contain;
+        background-position: center center;
+    }
+
+    .ui-datepicker-next {
+        background-image: url(img/angle-right.png);
+        background-size: contain;
+        background-position: center;
+    }
+
+
+    .ui-datepicker-prev .ui-icon,
+    .ui-datepicker-next .ui-icon {
+        cursor: pointer;
+        padding: 0px;
+        background-image: none !important;
+        /* 기본 배경 이미지 제거 */
+    }
+
+    .ui-datepicker-next-hover,
+    .ui-datepicker-prev-hover {
+        opacity: 0;
+    }
+
+    .month .ui-datepicker td {
+        padding: 0px;
+    }
+
+    .month .ui-datepicker td a {
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        color: #636250;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+    .month a.ui-state-default {}
+
+    .month a.ui-state-highlight {}
+
+    .month a.ui-state-active {
+        background-color: #70A2D7;
+        border-radius: 50%;
+        color: #EDF6FF !important;
+    }
+
+    .ui-datepicker tr {
+        color: #8D9FB2;
+        font-size: 16px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+
+    /* 신청폼 설정 */
+    .form {
+        width: 100%;
+        height: 50%;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    .form input {}
+
+    .form ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .form li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+    .form label {
+        font-weight: bold;
+        font-size: 20px;
+        color: #403F34;
+    }
+
+
+    /* 성함 설정 */
+    #no1 {
+        height: 40px;
+        width: 280px;
+        border: 1px solid #30475F;
+    }
+
+    .form li:nth-child(1) {
+        width: 84%;
+        display: flex;
+        height: 100%;
+    }
+
+    .form li:nth-child(1) label {
+        width: 10%;
+        height: 100%;
+    }
+
+    .form .name {
+        width: 280px;
+        height: 40px;
+    }
+
+    /* 전화번호 설정 */
+    #no2 {
+        height: 40px;
+        width: 280px;
+        border: 1px solid #30475F;
+    }
+
+    .form li:nth-child(2) {
+        width: 84%;
+        display: flex;
+        height: 100%;
+    }
+
+    .form li:nth-child(2) label {
+        width: 20%;
+        height: 100%;
+    }
+
+    .form .phone {
+        width: 280px;
+        height: 40px;
+    }
+
+
+
+    /* 체험명 설정 */
+    .form .booking_wrap {
+        display: flex;
+        width: 100%;
+    }
+
+    .form .booking_wrap2 {
+        width: 35%;
+    }
+
+    .form .booking_wrap3 {
+        width: 65%;
+    }
+
+    .form .booking_wrap3 label {
+        font-size: 20px;
+        font-weight: normal;
+        color: #636250;
+        margin-left: 10px;
+    }
+
+
+
+
+
+    /* 체험 인원 설정 */
+    .booking_wrap4 {
+        display: flex;
+        width: 100%;
+    }
+
+    .booking_wrap4 label {
+        width: 35%;
+    }
+
+
+    .person {
+        width: 65%;
+    }
+
+    .person input {
+        width: 150px;
+        height: 30px;
+    }
+
+
+    /* 체험 시간 설정*/
+    .form li:nth-child(5) {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .form li:nth-child(5) label {
+        width: 10%;
+        margin-right: 50px;
+    }
+
+    .form .times {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .form .times span {
+        border: 2px dotted #403F34;
+        font-size: 18px;
+        color: #636250;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 5px 0;
+        margin-right: 10px;
+    }
+
+    .form .times span:hover {
+        background-color: #F47C7D;
+        color: #1E1E1E;
+        border-color: #1E1E1E;
+        font-weight: bold;
+    }
+
+
+
+
+    /* 예약하기 버튼 설정 */
+    .form .button span {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+  
+
+        
+    }
+
+    .form .button span p {
+        color: #EDF6FF;
+        font-size: 25px;
+        font-family: "Gowun Batang", serif;
+        padding: 20px 130px;
+        text-align: center;
+        background-color: #70A2D7;
+        border-radius: 10px;
+        display: block;
+    }
+
+
+    /* 예약완료 팝업창 */
+.fixed {
+    position: fixed;
+    z-index: 99;
+    top: 5%;
+    left: 50%;
+    margin-left: -20%;
+    width: 40%;
+    height: 55%;
+    background-color: #FDFCDD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed article {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #A0A0A0;
+    text-align: center;
+    
+}
+.fixed article p {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 40px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    margin-right: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+.fixed article p:hover {
+    background-color: #F47C7D;
+}
+.fixed article ul {}
+.fixed article li {
+    font-size: 16px;
+    font-weight: bold;
+    color: #70A2D7;
+}
+.fixed article li b{
+    font-weight: normal;
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.fixed article li span {
+    font-weight: normal;
+    font-size: 20px;
+    color: #1E1E1E;
+}
+.fixed article .done {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3;
+    color: #1E1E1E;
+}
+
+
+
+
+    /* 리뷰설정 */
+    /* 리뷰설정 */
+    .review_section {
+        background-color: #FBFAC5;
+        height: 140px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .review_section .review_inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper h3 {
+        font-family: "Gowun Batang", serif;
+        color: #F47C7D;
+        font-size: 25px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper ul {
+        width: 70%;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+        top: 100%;
+        left: 28%;
+        margin-top: 140px;
+
+    }
+
+    .swiper li {
+        font-size: 18px;
+        color: #434343;
+        position: absolute;
+        transition: all 0.8s;
+        background-color: #FBFAC5;
+        left: 0;
+        top: 50%;
+        margin-top: -10.5px;
+    }
+
+
+
+
+
+
+
+
+    /* 이용안내 설정 --------------- 끝 ------------*/
+    /* 이용안내 레이아웃 설정 */
+    .info_section {
+        margin-top: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .info_inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .map {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile_info {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+    .rest {
+        width: 50%;
+
+    }
+
+    .warning {
+        width: 50%;
+    }
+
+
+
+
+
+
+    /* 이용안내 타이틀 설정 */
+    /*  타이틀 설정 */
+    .info_inner .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .info .info_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .info_inner .info_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .info_inner .info_title .leaf img {
+        transform: scale(0.0135) translateY(300px);
+    }
+
+    .info_inner .info_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .mobile_infotitle i {
+        display: none;
+    }
+
+
+    /* 이용안내 텍스트 설정 */
+
+    .info h3 {
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .info_inner h3 i {
+        color: #70A2D7;
+        font-size: 40px;
+
+    }
+
+    .info_inner h3 span {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        font-weight: normal;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        letter-spacing: 0;
+        color: #403F34;
+        width: 90%;
+    }
+
+    .info h4 {
+        color: #1E1E1E;
+        font-size: 23px;
+        letter-spacing: 10px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+    }
+
+    .info h4 span {
+        border: 8px solid #F47C7D;
+        border-radius: 50%;
+        display: inline-block;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    .info p {
+        text-align: center;
+        color: #636250;
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+
+
+
+
+    /* 오시는길 설정 */
+    .map .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .map .map_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .map .map_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .map .map_title .leaf img {
+        transform: scale(0.0135) translateY(300px);
+    }
+
+    .map .map_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .map .map_title i {
+        display: none;
+    }
+
+    .map p {
+        font-weight: bold;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        letter-spacing: 5px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .google {
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .google iframe {
+        width: 85%;
+        height: 460px;
+
+    }
+
+
+
+
+
+
+    /* 지역축제 타이틀 설정 */
+    .festival_inner .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #F7F48B;
+        margin: 0 auto;
+
+    }
+
+    .festival_inner .festival_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .festival_inner .festival_title .leaf {
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 15px;
+    }
+
+    .festival_inner .festival_title .leaf img {
+        transform: scale(0.0145) translateX(-300PX) rotate(90deg);
+    }
+
+    .festival_inner .festival_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+
+
+    /* 지역축제 설정 */
+    .festival_bg {
+        background-color: rgba(255, 255, 192, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .festival_bg .local {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+       
+    }
+
+    .festival_bg .garden {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .garden ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .garden li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .garden li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .garden li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .garden li:nth-child(1) img {
+        transform: scale(0.5);
+    }
+
+
+    .festival_bg .night {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .night ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .night li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .night li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .night li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .night li:nth-child(1) img {
+        transform: scale(0.5) translate(30px, -50px);
+    }
+
+
+
+
+    /* 링크 설정 */
+
+    .festival_inner .link {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .festival_inner .link h3 {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 25px;
+        letter-spacing: 25px;
+        width: 100%;
+        height: auto;
+        color: #403F34;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .festival_inner .link h3 em {
+        color: #F47C7D;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .link .link_2 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .link div a {
+
+        display: block;
+        padding: 20px;
+    }
+
+    .link div a:hover {
+        text-decoration: underline;
+    }
+
+    .link div i {
+        font-size: 20px;
+        vertical-align: middle;
+        margin: 0 20px;
+        color: #403F34;
+    }
+
+
+    /* 링크 이미지 설정 */
+    /* 비짓전주 */
+    .link .visit {
+        /* position: relative; */
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link .visit a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+
+    }
+
+    .link .visit a p {
+        color: #403F34;
+    }
+
+
+
+    .link .visit img {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        margin-top: 2px;
+    }
+
+    /* 한옥마을 */
+    .link .hanok {
+        /* position: relative; */
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link .hanok a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+    }
+
+    .link .hanok p {
+        color: #403F34;
+    }
+
+    .link .hanok img {
+        width: 75px;
+        height: 65px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+/* 835px 이상 */
+@media(min-width:835px) and (max-width:1100px) {
+
+
+
+    .landing {
+        width: 100%;
+        height: 70vh;
+        background-color: #FDFCDD;
+        position: relative;
+        background-image: url(img/landing007.png);
+        background-size: cover;
+        background-position: 0 10px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* 로고 설정 */
+header {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+header h1 {}
+
+header h1 a {
+    display: block;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header img {
+    transform: scale(0.7);
+}
+
+
+
+    /* 유틸 설정 */
+.landing .util {
+    position: absolute;
+    cursor: pointer;
+    top: 80px;
+    left: 90%;
+    z-index: 99;
+}
+
+.landing .util h2 {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.landing .util h2:hover {
+    color: #A1DD93;
+    font-weight: bolder;
+}
+
+
+    /* GNB 설정 */
+.landing nav {
+    background-color: #FEFEF3;
+    width: 95%;
+    height: 12%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -47.5%;
+    margin-top: 10px;
+    z-index: 99;
+}
+.landing nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing nav a {
+    font-size: 15px;
+    color: #403F34;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 랜딩 텍스트 설정 */
+.landing .hero {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+
+.landing .hero p {
+    color: #ACC2D9;
+}
+
+
+.landing .hero .txt001 {
+    font-size: 16px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 4px;
+}
+
+.landing .hero .txt002 {
+    font-size: 20px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 5px;
+    text-align: right;
+
+}
+
+.landing .hero h4 {
+    letter-spacing: 15px;
+    font-size: 25px;
+    color: #8D9FB2;
+    font-weight: normal;
+    font-family: "Orbit", sans-serif;
+}
+
+.landing .hero span {
+    color: #EDF6FF;
+    -webkit-text-stroke: 1px #8D9FB2;
+}
+
+.landing .hero h3 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #70A2D7;
+    font-family: "Hahmlet", serif;
+    letter-spacing: 30px;
+}
+
+
+
+/* 랜딩 이미지 설정 */
+.landing .image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    margin-top: -230px;
+    margin-left: -160px;
+    overflow: hidden;
+}
+
+.landing .image img {
+    transform: scale(0.6)
+}
+
+
+
+
+
+
+/* 인트로 리스트 박스 설정 */
+.intro .listBox {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #E5F8E1;
+    margin-top: 50px;
+}
+
+.intro .imgBox {
+    width: 100%;
+    height: auto;
+}
+
+.intro .imgBox ul {}
+
+.intro .imgBox li {
+    transition: all 0.3s;
+}
+
+
+.intro .imgBox .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro .imgBox .content li {
+    width: 25%;
+    height: auto;
+}
+
+.intro .imgBox .content li img {
+    transform: scale(0.8);
+}
+
+
+.intro .imgBox .content h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 5px;
+    color: #434343;
+    margin-top: 20px;
+
+}
+
+.intro .imgBox .content h2 p {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #636250;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+.intro .dot {
+    width: 79%;
+    height: auto;
+    margin-top: 20px;
+    margin: 30px auto;
+}
+
+.intro .dot ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro .dot li {
+    cursor: pointer;
+
+}
+
+.intro .dot li>div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #A1DD93;
+}
+
+
+.listBox .imgBox .content li:hover {
+    transform: translateY(-20px);
+}
+
+
+.dot li>div.on {
+    background-color: #70A2D7 !important;
+}
+
+
+/* 공지사항 설정 */
+.notice_inner .txtBox {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+
+.notice_inner .txtBox li a .date {
+    width: 15%;
+    height: 90px;
+}
+
+.notice_inner .txtBox li a .date h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 45px;
+}
+
+.notice_inner .txtBox li a .date span {
+    font-size: 20px;
+}
+
+
+
+.notice_inner .txtBox li a .txt {
+    width: 90%;
+}
+
+.notice_inner .txtBox li a .txt h2 {
+    color: #403F34;
+    font-size: 18px;
+}
+
+.notice_inner .txtBox li a .txt p {
+    color: #403F34;
+    font-size: 18px;
+}
+
+
+
+/* 배너 설정 */
+.notice_inner .imgBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+
+
+.notice_inner .imgBox .dot {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+}
+
+/* 체험예약 설정===================================== */
+.booking {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.booking .booking_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #E2ECF7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* 달력설정 */
+.month {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.month .ui-datepicker {
+    width: 680px;
+    height: 700px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 75px;
+
+}
+
+.ui-datepicker table {
+    width: 100%;
+    height: 100%;
+
+}
+
+.month .ui-datepicker .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+    color: #636250;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.ui-datepicker-prev {
+    background-image: url(img/angle-left.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.ui-datepicker-next {
+    background-image: url(img/angle-right.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-image: none !important;
+    /* 기본 배경 이미지 제거 */
+}
+
+.ui-datepicker-next-hover,
+.ui-datepicker-prev-hover {
+    opacity: 0;
+}
+
+.month .ui-datepicker td {
+    padding: 25px;
+}
+
+.month .ui-datepicker td a {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #636250;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.month a.ui-state-default {}
+
+.month a.ui-state-highlight {}
+
+.month a.ui-state-active {
+    background-color: #70A2D7;
+    border-radius: 50%;
+    color: #EDF6FF !important;
+}
+
+.ui-datepicker tr {
+    color: #8D9FB2;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+/* 신청폼 설정 */
+.form {
+    width: 100%;
+    height: 50%;
+    padding: 20px 0;
+    display: flex;
+}
+
+.form input {}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.form label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #403F34;
+}
+
+
+/* 성함 설정 */
+#no1 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(1) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(1) label {
+    width: 10%;
+    height: 100%;
+}
+
+.form .name {
+    width: 280px;
+    height: 40px;
+}
+
+/* 전화번호 설정 */
+#no2 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(2) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(2) label {
+    width: 20%;
+    height: 100%;
+}
+
+.form .phone {
+    width: 280px;
+    height: 40px;
+}
+
+
+
+/* 체험명 설정 */
+.form .booking_wrap {
+    display: flex;
+    width: 100%;
+}
+
+.form .booking_wrap2 {
+    width: 35%;
+}
+
+.form .booking_wrap3 {
+    width: 65%;
+}
+
+.form .booking_wrap3 label {
+    font-size: 20px;
+    font-weight: normal;
+    color: #636250;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* 체험 인원 설정 */
+.booking_wrap4 {
+    display: flex;
+    width: 100%;
+}
+
+.booking_wrap4 label {
+    width: 35%;
+}
+
+
+.person {
+    width: 65%;
+}
+
+.person input {
+    width: 150px;
+    height: 30px;
+}
+
+
+/* 체험 시간 설정*/
+.form li:nth-child(5) {
+    width: 100%;
+    display: flex;
+
+}
+
+.form li:nth-child(5) label {
+    width: 10%;
+    margin-right: 50px;
+}
+
+.form .times {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.form .times span {
+    border: 2px dotted #403F34;
+    font-size: 18px;
+    color: #636250;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.form .times span:hover {
+    background-color: #F47C7D;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    font-weight: bold;
+}
+
+
+
+
+/* 예약하기 버튼 설정 */
+.form .button span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+
+    
+}
+
+.form .button span p {
+    color: #EDF6FF;
+    font-size: 25px;
+    font-family: "Gowun Batang", serif;
+    padding: 20px 130px;
+    text-align: center;
+    background-color: #70A2D7;
+    border-radius: 10px;
+    display: block;
+}
+
+
+ /* 리뷰설정 */
+    /* 리뷰설정 */
+    .review_section {
+        background-color: #FBFAC5;
+        height: 140px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .review_section .review_inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper h3 {
+        font-family: "Gowun Batang", serif;
+        color: #F47C7D;
+        font-size: 25px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper ul {
+        width: 70%;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+        top: 100%;
+        left: 28%;
+        margin-top: 140px;
+
+    }
+
+    .swiper li {
+        font-size: 20px;
+        color: #434343;
+        position: absolute;
+        transition: all 0.8s;
+        background-color: #FBFAC5;
+        left: 0;
+        top: 50%;
+        margin-top: -10.5px;
+    }
+
+
+
+    .info_section {
+        margin-top: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .info_inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .map {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile_info {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+    .rest {
+        width: 50%;
+
+    }
+
+    .warning {
+        width: 50%;
+    }
+
+
+    /* 이용안내 텍스트 설정 */
+
+    .info h3 {
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .info_inner h3 i {
+        color: #70A2D7;
+        font-size: 40px;
+
+    }
+
+    .info_inner h3 span {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        font-weight: normal;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        letter-spacing: 0;
+        color: #403F34;
+        width: 90%;
+    }
+
+    .info h4 {
+        color: #1E1E1E;
+        font-size: 30px;
+        letter-spacing: 10px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+    }
+
+    .info h4 span {
+        border: 8px solid #F47C7D;
+        border-radius: 50%;
+        display: inline-block;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    .info p {
+        text-align: center;
+        color: #636250;
+        font-size: 23px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+
+
+
+
+    /* 오시는길 설정 */
+    .map .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .map .map_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .map .map_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .map .map_title .leaf img {
+        transform: scale(0.0135) translateY(300px);
+    }
+
+    .map .map_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .map .map_title i {
+        display: none;
+    }
+
+    .map p {
+        font-weight: bold;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        letter-spacing: 5px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .google {
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .google iframe {
+        width: 85%;
+        height: 460px;
+
+    }
+
+
+
+
+     /* 지역축제 설정 */
+     .festival_bg {
+        background-color: rgba(255, 255, 192, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .festival_bg .local {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+
+    .festival_bg .garden {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .garden ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .garden li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .garden li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .garden li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .garden li:nth-child(1) img {
+        transform: scale(0.5);
+    }
+
+
+    .festival_bg .night {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .night ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .night li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .night li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .night li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .night li:nth-child(1) img {
+        transform: scale(0.5) translate(30px, -50px);
+    }
+
+
+
+
+    /* 링크 설정 */
+
+    .festival_inner .link {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .festival_inner .link h3 {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 25px;
+        letter-spacing: 25px;
+        width: 100%;
+        height: auto;
+        color: #403F34;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .festival_inner .link h3 em {
+        color: #F47C7D;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .link .link_2 {
+        display: flex;
+        width: 100%;
+        height: 60%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .link div a {
+
+        display: block;
+        padding: 20px;
+    }
+
+    .link div a:hover {
+        text-decoration: underline;
+    }
+
+    .link div i {
+        font-size: 20px;
+        vertical-align: middle;
+        margin: 0 20px;
+        color: #403F34;
+    }
+
+
+    /* 링크 이미지 설정 */
+    /* 비짓전주 */
+    .link .visit {
+        /* position: relative; */
+        margin-top: 20px;
+    }
+
+    .link .visit a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+
+    }
+
+    .link .visit a p {
+        color: #403F34;
+    }
+
+
+
+    .link .visit img {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        margin-top: 2px;
+    }
+
+    /* 한옥마을 */
+    .link .hanok {
+        /* position: relative; */
+        margin-top: 20px;
+    }
+
+    .link .hanok a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+    }
+
+    .link .hanok p {
+        color: #403F34;
+    }
+
+    .link .hanok img {
+        width: 75px;
+        height: 65px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 1101이상 1279이하 */
+/* 835px 이상 */
+@media(min-width:1101px) and (max-width:1279px) {
+
+
+
+    .landing {
+        width: 100%;
+        height: 80vh;
+        background-color: #FDFCDD;
+        position: relative;
+        background-image: url(img/landing007.png);
+        background-size: cover;
+        background-position: 50px 10px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* 로고 설정 */
+header {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+header h1 {}
+
+header h1 a {
+    display: block;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header img {
+    transform: scale(0.7);
+}
+
+
+
+    /* 유틸 설정 */
+.landing .util {
+    position: absolute;
+    cursor: pointer;
+    top: 80px;
+    left: 90%;
+    z-index: 99;
+}
+
+.landing .util h2 {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.landing .util h2:hover {
+    color: #A1DD93;
+    font-weight: bolder;
+}
+
+
+    /* GNB 설정 */
+.landing nav {
+    background-color: #FEFEF3;
+    width: 95%;
+    height: 12%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -47.5%;
+    margin-top: 10px;
+    z-index: 99;
+}
+.landing nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing nav a {
+    font-size: 18px;
+    color: #403F34;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 랜딩 텍스트 설정 */
+.landing .hero {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+
+.landing .hero p {
+    color: #ACC2D9;
+}
+
+
+.landing .hero .txt001 {
+    font-size: 20px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 4px;
+}
+
+.landing .hero .txt002 {
+    font-size: 25px;
+    font-family: "Diphylleia", serif;
+    letter-spacing: 5px;
+    text-align: right;
+
+}
+
+.landing .hero h4 {
+    letter-spacing: 15px;
+    font-size: 30px;
+    color: #8D9FB2;
+    font-weight: normal;
+    font-family: "Orbit", sans-serif;
+}
+
+.landing .hero span {
+    color: #EDF6FF;
+    -webkit-text-stroke: 1px #8D9FB2;
+}
+
+.landing .hero h3 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #70A2D7;
+    font-family: "Hahmlet", serif;
+    letter-spacing: 35px;
+}
+
+
+
+/* 랜딩 이미지 설정 */
+.landing .image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 65%;
+    top: 20%;
+    margin-top: -170px;
+    margin-left: -200px;
+    overflow: hidden;
+}
+
+.landing .image img {
+    transform: scale(0.7)
+}
+
+
+
+
+
+
+/* 인트로 리스트 박스 설정 */
+.intro .listBox {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #E5F8E1;
+    margin-top: 50px;
+}
+
+.intro .imgBox {
+    width: 100%;
+    height: auto;
+}
+
+.intro .imgBox ul {}
+
+.intro .imgBox li {
+    transition: all 0.3s;
+}
+
+
+.intro .imgBox .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro .imgBox .content li {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro .imgBox .content li img {
+    transform: scale(0.8);
+}
+
+
+.intro .imgBox .content h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 5px;
+    color: #434343;
+    margin-top: 20px;
+
+}
+
+.intro .imgBox .content h2 p {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #636250;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+.intro .dot {
+    width: 79%;
+    height: auto;
+    margin-top: 20px;
+    margin: 30px auto;
+}
+
+.intro .dot ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro .dot li {
+    cursor: pointer;
+
+}
+
+.intro .dot li>div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #A1DD93;
+}
+
+
+.listBox .imgBox .content li:hover {
+    transform: translateY(-20px);
+}
+
+
+.dot li>div.on {
+    background-color: #70A2D7 !important;
+}
+
+
+/* 공지사항 설정 */
+.notice_inner .txtBox {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+
+.notice_inner .txtBox li a .date {
+    width: 10%;
+    height: auto;
+}
+
+.notice_inner .txtBox li a .date h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 45px;
+}
+
+.notice_inner .txtBox li a .date span {
+    font-size: 20px;
+}
+
+
+
+.notice_inner .txtBox li a .txt {
+    width: 90%;
+}
+
+.notice_inner .txtBox li a .txt h2 {
+    color: #403F34;
+    font-size: 18px;
+}
+
+.notice_inner .txtBox li a .txt p {
+    color: #403F34;
+    font-size: 18px;
+}
+
+
+
+/* 배너 설정 */
+.notice_inner .imgBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+
+
+
+.notice_inner .imgBox .dot {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+}
+
+/* 체험예약 설정===================================== */
+.booking {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.booking .booking_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #E2ECF7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* 달력설정 */
+.month {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.month .ui-datepicker {
+    width: 680px;
+    height: 700px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 75px;
+
+}
+
+.ui-datepicker table {
+    width: 100%;
+    height: 100%;
+
+}
+
+.month .ui-datepicker .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+    color: #636250;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.ui-datepicker-prev {
+    background-image: url(img/angle-left.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.ui-datepicker-next {
+    background-image: url(img/angle-right.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-image: none !important;
+    /* 기본 배경 이미지 제거 */
+}
+
+.ui-datepicker-next-hover,
+.ui-datepicker-prev-hover {
+    opacity: 0;
+}
+
+.month .ui-datepicker td {
+    padding: 25px;
+}
+
+.month .ui-datepicker td a {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #636250;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+.month a.ui-state-default {}
+
+.month a.ui-state-highlight {}
+
+.month a.ui-state-active {
+    background-color: #70A2D7;
+    border-radius: 50%;
+    color: #EDF6FF !important;
+}
+
+.ui-datepicker tr {
+    color: #8D9FB2;
+    font-size: 20px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+
+
+/* 신청폼 설정 */
+.form {
+    width: 100%;
+    height: 50%;
+    padding: 20px 0;
+    display: flex;
+}
+
+.form input {}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.form label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #403F34;
+}
+
+
+/* 성함 설정 */
+#no1 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(1) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(1) label {
+    width: 10%;
+    height: 100%;
+}
+
+.form .name {
+    width: 280px;
+    height: 40px;
+}
+
+/* 전화번호 설정 */
+#no2 {
+    height: 40px;
+    width: 280px;
+    border: 1px solid #30475F;
+}
+
+.form li:nth-child(2) {
+    width: 84%;
+    display: flex;
+    height: 100%;
+}
+
+.form li:nth-child(2) label {
+    width: 20%;
+    height: 100%;
+}
+
+.form .phone {
+    width: 280px;
+    height: 40px;
+}
+
+
+
+/* 체험명 설정 */
+.form .booking_wrap {
+    display: flex;
+    width: 100%;
+}
+
+.form .booking_wrap2 {
+    width: 35%;
+}
+
+.form .booking_wrap3 {
+    width: 65%;
+}
+
+.form .booking_wrap3 label {
+    font-size: 20px;
+    font-weight: normal;
+    color: #636250;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* 체험 인원 설정 */
+.booking_wrap4 {
+    display: flex;
+    width: 100%;
+}
+
+.booking_wrap4 label {
+    width: 35%;
+}
+
+
+.person {
+    width: 65%;
+}
+
+.person input {
+    width: 150px;
+    height: 30px;
+}
+
+
+/* 체험 시간 설정*/
+.form li:nth-child(5) {
+    width: 100%;
+    display: flex;
+
+}
+
+.form li:nth-child(5) label {
+    width: 10%;
+    margin-right: 50px;
+}
+
+.form .times {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.form .times span {
+    border: 2px dotted #403F34;
+    font-size: 18px;
+    color: #636250;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.form .times span:hover {
+    background-color: #F47C7D;
+    color: #1E1E1E;
+    border-color: #1E1E1E;
+    font-weight: bold;
+}
+
+
+
+
+/* 예약하기 버튼 설정 */
+.form .button span {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+
+    
+}
+
+.form .button span p {
+    color: #EDF6FF;
+    font-size: 25px;
+    font-family: "Gowun Batang", serif;
+    padding: 20px 130px;
+    text-align: center;
+    background-color: #70A2D7;
+    border-radius: 10px;
+    display: block;
+}
+
+
+ /* 리뷰설정 */
+    /* 리뷰설정 */
+    .review_section {
+        background-color: #FBFAC5;
+        height: 140px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .review_section .review_inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper h3 {
+        font-family: "Gowun Batang", serif;
+        color: #F47C7D;
+        font-size: 30px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper ul {
+        width: 70%;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+        top: 100%;
+        left: 28%;
+        margin-top: 140px;
+
+    }
+
+    .swiper li {
+        font-size: 25px;
+        color: #434343;
+        position: absolute;
+        transition: all 0.8s;
+        background-color: #FBFAC5;
+        left: 0;
+        top: 50%;
+        margin-top: -17px;
+    }
+
+
+
+    .info_section {
+        margin-top: 150px;
+        width: 100%;
+        height: auto;
+    }
+
+    .info_inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .map {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile_info {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+
+    .rest {
+        width: 50%;
+
+    }
+
+    .warning {
+        width: 50%;
+    }
+
+
+    /* 이용안내 텍스트 설정 */
+
+    .info h3 {
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .info_inner h3 i {
+        color: #70A2D7;
+        font-size: 40px;
+
+    }
+
+    .info_inner h3 span {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        font-weight: normal;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        letter-spacing: 0;
+        color: #403F34;
+        width: 90%;
+    }
+
+    .info h4 {
+        color: #1E1E1E;
+        font-size: 30px;
+        letter-spacing: 10px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        text-align: center;
+    }
+
+    .info h4 span {
+        border: 8px solid #F47C7D;
+        border-radius: 50%;
+        display: inline-block;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    .info p {
+        text-align: center;
+        color: #636250;
+        font-size: 25px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-family: "IBM Plex Sans KR", sans-serif;
+    }
+
+
+
+
+
+
+    /* 오시는길 설정 */
+    .map .bar {
+        width: 50px;
+        height: 10px;
+        background-color: #A1DD93;
+        margin: 0 auto;
+
+    }
+
+    .map .map_title {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .map .map_title .leaf {
+        width: 50px;
+        height: 40px;
+    }
+
+    .map .map_title .leaf img {
+        transform: scale(0.0135) translateY(300px);
+    }
+
+    .map .map_title h1 {
+        font-family: "Gowun Batang", serif;
+        letter-spacing: 15px;
+        font-size: 35px;
+    }
+
+    .map .map_title i {
+        display: none;
+    }
+
+    .map p {
+        font-weight: bold;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        letter-spacing: 5px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .google {
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .google iframe {
+        width: 85%;
+        height: 460px;
+
+    }
+
+
+
+
+     /* 지역축제 설정 */
+     .festival_bg {
+        background-color: rgba(255, 255, 192, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .festival_bg .local {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+
+    .festival_bg .garden {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .garden ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .garden li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .garden li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .garden li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .garden li:nth-child(1) img {
+        transform: scale(0.5);
+    }
+
+
+    .festival_bg .night {
+        width: 250px;
+        height: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px grey;
+    }
+
+    .festival_bg .night ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .festival_bg .night li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .festival_bg .night li:nth-child(1) {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .festival_bg .night li span {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        line-height: 3.6;
+    }
+
+
+
+    .festival_bg .night li:nth-child(1) img {
+        transform: scale(0.5) translate(30px, -50px);
+    }
+
+
+
+
+    /* 링크 설정 */
+
+    .festival_inner .link {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .festival_inner .link h3 {
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-size: 28px;
+        letter-spacing: 25px;
+        width: 100%;
+        height: auto;
+        color: #403F34;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .festival_inner .link h3 em {
+        color: #F47C7D;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .link .link_2 {
+        display: flex;
+        width: 100%;
+        height: 60%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .link div a {
+
+        display: block;
+        padding: 20px;
+    }
+
+    .link div a:hover {
+        text-decoration: underline;
+    }
+
+    .link div i {
+        font-size: 20px;
+        vertical-align: middle;
+        margin: 0 20px;
+        color: #403F34;
+    }
+
+
+    /* 링크 이미지 설정 */
+    /* 비짓전주 */
+    .link .visit {
+        /* position: relative; */
+        margin-top: 20px;
+    }
+
+    .link .visit a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+
+    }
+
+    .link .visit a p {
+        color: #403F34;
+    }
+
+
+
+    .link .visit img {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        margin-top: 2px;
+    }
+
+    /* 한옥마을 */
+    .link .hanok {
+        /* position: relative; */
+        margin-top: 20px;
+    }
+
+    .link .hanok a {
+        position: relative;
+        background-color: #E1EFFF;
+        padding: 33px 0;
+        width: 280px;
+        display: flex;
+    }
+
+    .link .hanok p {
+        color: #403F34;
+    }
+
+    .link .hanok img {
+        width: 75px;
+        height: 65px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* 1280px 이상일 때 */
+@media(min-width:1280px) {
+
+    .intro_inner,
+    .notice_inner,
+    .booking_inner,
+    .booking_inner,
+    .review_inner,
+    .info_inner,
+    .festival_inner {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+}
