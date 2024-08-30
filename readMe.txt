@@ -2,6 +2,7 @@
 1. html
 2. css
 3. javascript
+4. profile
 
 project001 _ 전주수목원 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트: https://www.ex.co.kr/arboretum/
 project002 _ marc jacobs fragrance : 디자인, 퍼블리싱 - 신규 제작
@@ -86,3 +87,9 @@ project003 _ NCT 마크 : 디자인, 퍼블리싱 - 신규 제작
 
 
 - 작업기간: 60h
+
+
+
+
+
+<profile>
