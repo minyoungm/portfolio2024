@@ -2475,8 +2475,8 @@ section article {
     position: absolute;
     top: calc(100vh * 3.4);
     left: 50%;
-    width: 600px;
-    height: 430px;
+    width: 700px;
+    height: 500px;
     border: solid 2px #1D2635;
     display: none;
 }
@@ -2510,11 +2510,11 @@ section article {
     border-left: 2px solid #1D2635;
 }
 .popup4_pic .img img {
-    transform: scale(0.3);
+    transform: scale(0.5);
 }
 .popup4_pic .img {
     width: 100%;
-    height: 393px;
+    height: 463px;
     display: flex;
     justify-content: center;
     align-items: center;
