@@ -2,12 +2,33 @@
 1. html
 2. css
 3. javascript
+4. profile
 
 project001 _ 전주수목원 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트: https://www.ex.co.kr/arboretum/
 project002 _ marc jacobs fragrance : 디자인, 퍼블리싱 - 신규 제작
 project003 _ NCT 마크 : 디자인, 퍼블리싱 - 신규 제작
 
 
+
+
+<project001>
+1. nav, util
+- 호버 효과
+
+2. 배너 슬라이드
+
+2. 예약하기 페이지 삽입
+- 예약하기 클릭시 팝업창
+
+3. 리뷰 슬라이드 
+
+4. 구글 맵 연결
+
+5. 외부 링크 연결
+
+6. 반응형 웹
+
+작업시간 - 70h
 
 
 <project002>
@@ -86,3 +107,16 @@ project003 _ NCT 마크 : 디자인, 퍼블리싱 - 신규 제작
 
 
 - 작업기간: 60h
+
+
+
+
+
+<profile>
+
+
+
+
+
+
+
