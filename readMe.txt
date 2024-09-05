@@ -2,11 +2,12 @@
 1. html
 2. css
 3. javascript
-4. profile
+
 
 project001 _ 전주수목원 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트: https://www.ex.co.kr/arboretum/
 project002 _ marc jacobs fragrance : 디자인, 퍼블리싱 - 신규 제작
 project003 _ NCT 마크 : 디자인, 퍼블리싱 - 신규 제작
+profile
 
 
 
@@ -113,8 +114,26 @@ project003 _ NCT 마크 : 디자인, 퍼블리싱 - 신규 제작
 
 
 <profile>
-이름 키워드 스킬 교육
+이민영
+(#책임감 #계획적 #세심함 #정직함 #공감능력 #신중함)을 가지고 있습니다.
 
+
+- Education
+2017.03 한남대학교 국어국문창작학과 입학
+2024.10 UI&UX 프론트앤드 개발자양성 과정 수료
+
+
+- Certificate
+2019.04 워드프로세서
+2019.08 컴퓨터활용능력 2급
+2019.11 한국사능력검정 1급
+
+-Skills
+HTML 90%
+CSS 90%
+Javascript 50%
+Photoshop 60%
+Figma 90%
 
 
 
