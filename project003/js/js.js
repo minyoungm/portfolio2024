@@ -72,6 +72,7 @@ $(document).ready(function () {
             }
         }
     });
+   
 
     // article에서 마우스휠 했을 때, 화면이 움직인다.
     $('article').mousewheel(function (e, delta) {
@@ -92,16 +93,59 @@ $(document).ready(function () {
 
     // 애니메이션 -------------
     // 메인페이지를 열었을 때 애니메이션 작동하기
-    $(window).on('scroll', function(){
-        var sc = $(window).scrollTop();
+    // $(window).on('scroll', function(){
+    //     var sc = $(window).scrollTop();
 
-        $('article').each(function(index){
+    //     $('article').each(function(index){
+    //         var offsetTop = $(this).offset().top;
+    //         if(sc >= offsetTop){
+    //             if(index == 0){
+    //                 $('.main .imgBox li').addClass('animate');
+    //             }
+    //             if(index == 1){
+    //                 $('.about .left_txt li').addClass('animate2');
+    //                 $('.about .right_txt li').addClass('animate2');
+    //                 $('.about .popup1 .attention').addClass('slideIn2');
+    //                 $('.about .popup1 .heart').addClass('slideIn2');
+    //                 $('.about .popup1 .reminder').addClass('slideIn2');
+    //                 $('.about .popup2').addClass('slideIn1');
+    //             }
+    //             if(index == 3){
+    //                 $('.group .above li').addClass('animate2');
+    //                 $('.group .under li').addClass('animate2');
+    //             }
+    //         }
+    //     }); // 각 요소의 애니메이션 업데이트
+
+    // });
+    function updateArticleHeight() {
+        var winHeight = $(window).height();
+        $('article').height(winHeight);
+    }
+
+    // 페이지 로드 시 초기 높이 설정
+    updateArticleHeight();
+
+    // 브라우저 리사이즈 시 article 높이 업데이트
+    $(window).resize(function () {
+        updateArticleHeight();
+    });
+
+    // 스크롤 시 애니메이션 적용
+    $(window).on('scroll', function () {
+        var sc = $(window).scrollTop();
+        var winHeight = $(window).height(); // 현재 뷰포트 높이
+
+        $('article').each(function (index) {
             var offsetTop = $(this).offset().top;
-            if(sc >= offsetTop){
-                if(index == 0){
+            var height = $(this).height();
+
+            // 현재 article의 범위 내에 있을 때 애니메이션 적용
+            if (sc + winHeight > offsetTop && sc < offsetTop + height) {
+                if (index === 0) {
                     $('.main .imgBox li').addClass('animate');
                 }
-                if(index == 1){
+                if (index === 1) {
                     $('.about .left_txt li').addClass('animate2');
                     $('.about .right_txt li').addClass('animate2');
                     $('.about .popup1 .attention').addClass('slideIn2');
@@ -109,13 +153,12 @@ $(document).ready(function () {
                     $('.about .popup1 .reminder').addClass('slideIn2');
                     $('.about .popup2').addClass('slideIn1');
                 }
-                if(index == 3){
+                if (index === 3) {
                     $('.group .above li').addClass('animate2');
                     $('.group .under li').addClass('animate2');
                 }
             }
-        }); // 각 요소의 애니메이션 업데이트
-
+        });
     });
 
     var sc = $(window).scrollTop();
@@ -124,15 +167,16 @@ $(document).ready(function () {
     }
 
     // about 페이지로 넘어왔을 때 애니메이션 작동하기
-    var ht = $('article').height();
-    if(sc >= ht) {
-        $('.about .left_txt li').addClass('animate2');
-        $('.about .right_txt li').addClass('animate2');
-        $('.about .popup1 .attention').addClass('slideIn2');
-        $('.about .popup1 .heart').addClass('slideIn2');
-        $('.about .popup1 .reminder').addClass('slideIn2');
-        $('.about .popup2').addClass('slideIn1');
-    }
+    // var ht = $('article').height();
+    // console.log(ht)
+    // if(sc >= ht) {
+    //     $('.about .left_txt li').addClass('animate2');
+    //     $('.about .right_txt li').addClass('animate2');
+    //     $('.about .popup1 .attention').addClass('slideIn2');
+    //     $('.about .popup1 .heart').addClass('slideIn2');
+    //     $('.about .popup1 .reminder').addClass('slideIn2');
+    //     $('.about .popup2').addClass('slideIn1');
+    // }
 
     // about 동영상 설정
     // 마우스가 frame 안에 들어갔을 때 video pause/ 나갔을 때 play
@@ -143,11 +187,11 @@ $(document).ready(function () {
         $('.about .iphone .vid video').get(0).play();
     });
 
-    // group 페이지로 넘어왔을 때 애니메이션 작동하기
-    if(sc >= ht * 3){
-        $('.group .above li').addClass('animate2'); // animate2 수정
-        $('.group .under li').addClass('animate2'); // animate2 수정
-    }
+    // // group 페이지로 넘어왔을 때 애니메이션 작동하기
+    // if(sc >= ht * 3){
+    //     $('.group .above li').addClass('animate2'); // animate2 수정
+    //     $('.group .under li').addClass('animate2'); // animate2 수정
+    // }
 
     // playlist 설정
     // playlist 의 date의 li를 클릭했을 때, left_img의 li가 바껴라
@@ -293,3 +337,6 @@ $(document).ready(function () {
 
 
 }); // 끝------------------------------------------
+
+
+
